@@ -23,6 +23,8 @@ static inline void LKLogError(string str)
 class Example
 {
 protected:
+    double totalTime;
+    clock_t lastTime;
     GLuint program;
 public:
     virtual void setupShader(string vs,string fs);

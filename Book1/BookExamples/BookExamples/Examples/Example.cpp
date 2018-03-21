@@ -74,5 +74,12 @@ void Example::setup()
 
 void Example::render()
 {
-    
+    clock_t newTime = clock();
+    double timeDelta = (newTime-lastTime)/100000.0;
+    if (timeDelta>1)
+    {
+        timeDelta = 1;
+    }
+    lastTime = newTime;
+    totalTime += timeDelta;
 }
