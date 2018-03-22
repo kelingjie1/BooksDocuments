@@ -11,8 +11,10 @@
 #include <string>
 #include <iostream>
 #include <fstream>
+#include <vector>
 #include "ExampleUtil.h"
 
+using namespace std;
 #ifndef Example_h
 #define Example_h
 static inline void LKLogError(string str)

@@ -13,6 +13,7 @@
 class Example4 : public Example
 {
 public:
+    std::vector<GLfloat> vertice;
     virtual void setup();
     virtual void render();
 };

@@ -218,8 +218,8 @@
 		073E174D205261F7007B1BAF /* Example4 */ = {
 			isa = PBXGroup;
 			children = (
-				073E174E205261F7007B1BAF /* Example4.cpp */,
 				073E174F205261F7007B1BAF /* Example4.h */,
+				073E174E205261F7007B1BAF /* Example4.cpp */,
 			);
 			path = Example4;
 			sourceTree = "<group>";

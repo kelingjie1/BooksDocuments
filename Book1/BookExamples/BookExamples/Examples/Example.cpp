@@ -69,7 +69,7 @@ void Example::setupShader(string vs, string fs)
 
 void Example::setup()
 {
-    
+    lastTime = clock();
 }
 
 void Example::render()

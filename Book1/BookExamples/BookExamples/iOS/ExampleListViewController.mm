@@ -12,6 +12,11 @@
 #import "Example1.h"
 #import "Example2.h"
 #import "Example3.h"
+#import "Example4.h"
+#import "Example5.h"
+#import "Example6.h"
+#import "Example7.h"
+#import "Example8.h"
 
 DemoData *Demo(NSString *title,Example *example)
 {
@@ -52,6 +57,7 @@ DemoData *Demo(NSString *title,Example *example)
     ExampleUtil::instance->resourcesDir = [[[NSBundle mainBundle] resourcePath] cStringUsingEncoding:NSUTF8StringEncoding];
     self.demoDatas = @[Demo(@"Example1 -- 清空缓冲区", new Example1()),
                        Demo(@"Example2 -- 绘制图像", new Example2()),
+                       Demo(@"Example3 -- 使用VBO提高性能", new Example3()),
                        ];
     
 }

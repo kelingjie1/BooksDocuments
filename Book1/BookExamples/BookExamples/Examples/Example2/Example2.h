@@ -10,12 +10,10 @@
 #define Example2_h
 
 #include "Example.h"
-#include <vector>
-using namespace std;
 class Example2 : public Example
 {
-    std::vector<GLfloat> vertice;
 public:
+    std::vector<GLfloat> vertice;
     virtual void setup();
     virtual void render();
 };

@@ -12,6 +12,7 @@ const int vertice_num = 6;
 
 void Example2::setup()
 {
+    Example::setup();
     setupShader("Example2.vs", "Example2.fs");
     
     vertice.resize(vertice_num*2);
@@ -38,8 +39,6 @@ void Example2::setup()
     offset+=2;
     vertice[offset] = 0.6;
     vertice[offset+1] = 0.6;
-    
-    lastTime = clock();
 }
 
 void Example2::render()

@@ -9,10 +9,11 @@
 #ifndef Example3_h
 #define Example3_h
 
-#include "Example.h"
-class Example3 : public Example
+#include "Example2.h"
+class Example3 : public Example2
 {
 public:
+    GLuint vbo;
     virtual void setup();
     virtual void render();
 };
