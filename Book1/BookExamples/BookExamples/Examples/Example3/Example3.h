@@ -9,11 +9,12 @@
 #ifndef Example3_h
 #define Example3_h
 
-#include "Example2.h"
-class Example3 : public Example2
+#include "Example.h"
+class Example3 : public Example
 {
 public:
-    GLuint vbo;
+    std::vector<GLfloat> vertice;
+    std::vector<GLushort> indice;
     virtual void setup();
     virtual void render();
 };

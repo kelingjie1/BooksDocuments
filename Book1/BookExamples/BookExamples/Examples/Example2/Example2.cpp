@@ -13,8 +13,10 @@ const int vertice_num = 6;
 void Example2::setup()
 {
     Example::setup();
+    //编译顶点着色器和片段着色器
     setupShader("Example2.vs", "Example2.fs");
     
+    //初始化顶点数据
     vertice.resize(vertice_num*2);
     int offset = 0;
     vertice[offset] = 0.0;
@@ -47,9 +49,12 @@ void Example2::render()
     glClearColor(1, 0, 0, 1);
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(program);
+    //允许使用0号顶点数组
     glEnableVertexAttribArray(0);
+    //向0号顶点数组传递数据
     glVertexAttribPointer(0, 2, GL_FLOAT, false, 0, vertice.data());
     int index = (int)totalTime/2%7;
+    glLineWidth(10);
     if (index==0)
     {
         //绘制点
@@ -62,12 +67,12 @@ void Example2::render()
     }
     else if (index==2)
     {
-        //循环绘制线(0-1-2-3-4-5-0)
+        //连续绘制线(0-1-2-3-4-5-0)
         glDrawArrays(GL_LINE_STRIP, 0, vertice_num);
     }
     else if (index==3)
     {
-        //连续绘制线(0-1-2-3-4-5)
+        //循环绘制线(0-1-2-3-4-5)
         glDrawArrays(GL_LINE_LOOP, 0, vertice_num);
     }
     else if (index==4)

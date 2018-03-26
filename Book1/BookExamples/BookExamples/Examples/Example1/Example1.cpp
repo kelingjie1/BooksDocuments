@@ -15,6 +15,8 @@ void Example1::setup()
 
 void Example1::render()
 {
+    //设置清除颜色(RGBA)
     glClearColor(1, 0, 0, 1);
+    //清除颜色缓冲区
     glClear(GL_COLOR_BUFFER_BIT);
 }
