@@ -13,8 +13,8 @@
 class Example3 : public Example
 {
 public:
-    std::vector<GLfloat> vertice;
-    std::vector<GLushort> indice;
+    vector<GLfloat> vertice;
+    vector<GLushort> indice;
     virtual void setup();
     virtual void render();
 };

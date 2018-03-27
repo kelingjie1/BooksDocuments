@@ -65,7 +65,7 @@ void Example4::render()
     }
     else if (index==5)
     {
-        //绘制连续三角形(0-1-2,2-1-3,2-3-4,4-3-5)
+        //绘制三角形条带(0-1-2,2-1-3,2-3-4,4-3-5)
         glDrawArrays(GL_TRIANGLE_STRIP, 0, vertice_num);
     }
     else if (index==6)

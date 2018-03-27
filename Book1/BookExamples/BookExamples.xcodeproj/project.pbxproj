@@ -200,8 +200,8 @@
 		073E1747205261F6007B1BAF /* Example6 */ = {
 			isa = PBXGroup;
 			children = (
-				073E1748205261F6007B1BAF /* Example6.cpp */,
 				073E1749205261F6007B1BAF /* Example6.h */,
+				073E1748205261F6007B1BAF /* Example6.cpp */,
 			);
 			path = Example6;
 			sourceTree = "<group>";
@@ -227,8 +227,8 @@
 		073E1750205261F7007B1BAF /* Example5 */ = {
 			isa = PBXGroup;
 			children = (
-				073E1751205261F7007B1BAF /* Example5.cpp */,
 				073E1752205261F7007B1BAF /* Example5.h */,
+				073E1751205261F7007B1BAF /* Example5.cpp */,
 			);
 			path = Example5;
 			sourceTree = "<group>";

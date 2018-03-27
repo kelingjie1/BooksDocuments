@@ -13,6 +13,10 @@
 class Example5 : public Example
 {
 public:
+    vector<GLfloat> vertice;
+    vector<GLushort> indice;
+    GLuint vbo;
+    GLuint ebo;
     virtual void setup();
     virtual void render();
 };
