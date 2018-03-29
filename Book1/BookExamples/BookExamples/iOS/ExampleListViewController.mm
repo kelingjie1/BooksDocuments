@@ -17,6 +17,17 @@
 #import "Example6.h"
 #import "Example7.h"
 #import "Example8.h"
+#import "Example9.h"
+#import "Example11.h"
+#import "Example12.h"
+#import "Example13.h"
+#import "Example14.h"
+#import "Example15.h"
+#import "Example16.h"
+#import "Example17.h"
+#import "Example18.h"
+#import "Example19.h"
+#import "Example20.h"
 
 DemoData *Demo(NSString *title,Example *example)
 {
