@@ -14,6 +14,7 @@
 
 @property (nonatomic) Example *example;
 @property (nonatomic) EAGLContext *context;
+@property (nonatomic) EAGLSharegroup *shareGroup;
 @property (nonatomic) GLKView *glview;
 
 @end

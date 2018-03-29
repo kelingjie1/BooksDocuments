@@ -14,10 +14,22 @@
 {
     [super viewDidLoad];
     self.context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES3];
+    self.shareGroup = self.context.sharegroup;
     self.glview = (GLKView*)self.view;
     self.glview.context = self.context;
     [EAGLContext setCurrentContext:self.context];
     self.example->setup();
+//    EAGLContext *context = [EAGLContext currentContext];
+//    GLuint buffer0;
+//    glGenBuffers(1, &buffer0);
+//    NSLog(@"%d",buffer0);
+//    dispatch_async(dispatch_get_global_queue(0, 0), ^{
+//        EAGLContext *context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES3 sharegroup:self.shareGroup];
+//        [EAGLContext setCurrentContext:context];;
+//        GLuint buffer1;
+//        glGenBuffers(1, &buffer1);
+//        NSLog(@"%@",context);
+//    });
 }
 
 - (void)glkView:(GLKView *)view drawInRect:(CGRect)rect
