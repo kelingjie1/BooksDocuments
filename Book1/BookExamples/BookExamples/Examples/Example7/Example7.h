@@ -13,6 +13,10 @@
 class Example7 : public Example
 {
 public:
+    GLuint texture;
+    GLuint texLocation;
+    vector<GLfloat> vertice;
+    vector<GLfloat> texCoords;
     virtual void setup();
     virtual void render();
 };

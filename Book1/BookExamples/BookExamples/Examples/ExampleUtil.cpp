@@ -8,3 +8,8 @@
 
 #include "ExampleUtil.h"
 ExampleUtil *ExampleUtil::instance = new ExampleUtil();
+
+ExampleTexture::ExampleTexture(string file)
+{
+    ExampleIOSBridge::createTextureFromFile("64.jpg", width, height, texture);
+}

@@ -72,8 +72,8 @@ DemoData *Demo(NSString *title,Example *example)
                        Demo(@"Example4 -- 使用顶点缓冲区(VBO)", new Example4()),
                        Demo(@"Example5 -- 使用索引缓冲区(EBO)", new Example5()),
                        Demo(@"Example6 -- 使用顶点数组对象(VAO)", new Example6()),
+                       Demo(@"Example7 -- 创建并使用纹理", new Example7()),
                        ];
-    
 }
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView

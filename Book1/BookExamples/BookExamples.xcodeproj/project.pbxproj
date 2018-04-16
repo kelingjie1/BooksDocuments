@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		070BCCC3207CEC910034A09C /* image in Resources */ = {isa = PBXBuildFile; fileRef = 070BCCC2207CEC900034A09C /* image */; };
+		070BCCCA207CEE410034A09C /* ExampleIOSBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 070BCCC9207CEE410034A09C /* ExampleIOSBridge.mm */; };
 		07314E61206CDB250082D5B4 /* Example20.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E3E206CDB230082D5B4 /* Example20.cpp */; };
 		07314E62206CDB250082D5B4 /* Example13.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E41206CDB230082D5B4 /* Example13.cpp */; };
 		07314E63206CDB250082D5B4 /* Example15.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E44206CDB230082D5B4 /* Example15.cpp */; };
@@ -42,6 +44,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		070BCCC2207CEC900034A09C /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
+		070BCCC8207CEE410034A09C /* ExampleIOSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleIOSBridge.h; sourceTree = "<group>"; };
+		070BCCC9207CEE410034A09C /* ExampleIOSBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleIOSBridge.mm; sourceTree = "<group>"; };
 		07314E3E206CDB230082D5B4 /* Example20.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example20.cpp; sourceTree = "<group>"; };
 		07314E3F206CDB230082D5B4 /* Example20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example20.h; sourceTree = "<group>"; };
 		07314E41206CDB230082D5B4 /* Example13.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example13.cpp; sourceTree = "<group>"; };
@@ -116,6 +121,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		070BCCC4207CED980034A09C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		07314E3D206CDB230082D5B4 /* Example20 */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,6 +286,8 @@
 				073E172020516B88007B1BAF /* LaunchScreen.storyboard */,
 				073E172320516B88007B1BAF /* Info.plist */,
 				073E172420516B88007B1BAF /* main.m */,
+				070BCCC8207CEE410034A09C /* ExampleIOSBridge.h */,
+				070BCCC9207CEE410034A09C /* ExampleIOSBridge.mm */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -288,6 +302,7 @@
 		073E173420523363007B1BAF /* Examples */ = {
 			isa = PBXGroup;
 			children = (
+				070BCCC4207CED980034A09C /* Common */,
 				073E176020527520007B1BAF /* Resources */,
 				073E173620523389007B1BAF /* Example.h */,
 				073E173520523389007B1BAF /* Example.cpp */,
@@ -392,6 +407,7 @@
 		073E176020527520007B1BAF /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				070BCCC2207CEC900034A09C /* image */,
 				073E176620527534007B1BAF /* shader */,
 			);
 			path = Resources;
@@ -456,6 +472,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				073E172220516B88007B1BAF /* LaunchScreen.storyboard in Resources */,
+				070BCCC3207CEC910034A09C /* image in Resources */,
 				073E176720527534007B1BAF /* shader in Resources */,
 				073E171F20516B88007B1BAF /* Assets.xcassets in Resources */,
 				073E171D20516B88007B1BAF /* Main.storyboard in Resources */,
@@ -474,6 +491,7 @@
 				07314E65206CDB250082D5B4 /* Example18.cpp in Sources */,
 				07314E62206CDB250082D5B4 /* Example13.cpp in Sources */,
 				073E173720523389007B1BAF /* Example.cpp in Sources */,
+				070BCCCA207CEE410034A09C /* ExampleIOSBridge.mm in Sources */,
 				07314E67206CDB250082D5B4 /* Example19.cpp in Sources */,
 				07314E63206CDB250082D5B4 /* Example15.cpp in Sources */,
 				07314E66206CDB250082D5B4 /* Example9.cpp in Sources */,
@@ -630,6 +648,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 557RBV9698;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/BookExamples/iOS\"";
 				INFOPLIST_FILE = BookExamples/iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lingtonke.BookExamples;
@@ -644,6 +663,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 557RBV9698;
+				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/BookExamples/iOS\"";
 				INFOPLIST_FILE = BookExamples/iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lingtonke.BookExamples;
