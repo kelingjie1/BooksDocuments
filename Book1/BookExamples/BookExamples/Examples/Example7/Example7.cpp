@@ -40,6 +40,7 @@ void Example7::setup()
 
 void Example7::render()
 {
+    Example::render();
     glClearColor(1, 0, 0, 1);
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(program);

@@ -7,11 +7,14 @@
 //
 #include <string>
 #include "ExampleIOSBridge.h"
+#include "Eigen/Eigen"
+
 
 #ifndef ExampleUtil_h
 #define ExampleUtil_h
 
 using namespace std;
+using namespace Eigen;
 
 class ExampleTexture
 {
@@ -27,6 +30,14 @@ class ExampleUtil
 public:
     static ExampleUtil *instance;
     string resourcesDir;
+    static Matrix4f Matrix4MakeLookAt(float eyeX, float eyeY, float eyeZ,
+                                      float targetX, float targetY, float targetZ,
+                                      float upX, float upY, float upZ);
+    static Matrix4f Matrix4MakePerspective(float viewWidth, float viewHeight, float angle,
+                                           float zNear, float zFar);
+    static Matrix4f Matrix4MakeXRotation(float radians);
+    static Matrix4f Matrix4MakeYRotation(float radians);
+    static Matrix4f Matrix4MakeZRotation(float radians);
 };
 
 #endif /* ExampleUtil_h */

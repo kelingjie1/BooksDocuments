@@ -648,7 +648,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 557RBV9698;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/BookExamples/iOS\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/BookExamples/iOS\"",
+					"\"$(SRCROOT)/BookExamples/Examples/Common/ThirdPart\"",
+				);
 				INFOPLIST_FILE = BookExamples/iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lingtonke.BookExamples;
@@ -663,7 +666,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 557RBV9698;
-				HEADER_SEARCH_PATHS = "\"$(SRCROOT)/BookExamples/iOS\"";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/BookExamples/iOS\"",
+					"\"$(SRCROOT)/BookExamples/Examples/Common/ThirdPart\"",
+				);
 				INFOPLIST_FILE = BookExamples/iOS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = lingtonke.BookExamples;

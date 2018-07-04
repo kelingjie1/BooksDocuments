@@ -13,6 +13,15 @@
 class Example8 : public Example
 {
 public:
+    GLuint texture;
+    GLuint texLocation;
+    GLuint xLocation;
+    GLuint yLocation;
+    GLuint widthLocation;
+    GLuint heightLocation;
+    
+    vector<GLfloat> vertice;
+    vector<GLfloat> texCoords;
     virtual void setup();
     virtual void render();
 };

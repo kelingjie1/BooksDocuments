@@ -10,8 +10,33 @@
 #define Example9_h
 
 #include "Example.h"
+#include "ExampleUtil.h"
+struct Example9Vertex
+{
+    GLfloat x;
+    GLfloat y;
+    GLfloat z;
+    GLfloat u;
+    GLfloat v;
+    
+} __attribute__((packed));
+
 class Example9 : public Example
 {
+protected:
+    GLuint texture;
+    GLuint texLocation;
+    GLuint xLocation;
+    GLuint yLocation;
+    GLuint widthLocation;
+    GLuint heightLocation;
+    GLuint mvpLocation;
+    
+    vector<Example9Vertex> vertice;
+    
+    Matrix4f modelMatrix;
+    Matrix4f viewMatrix;
+    Matrix4f projectionMatrix;
 public:
     virtual void setup();
     virtual void render();

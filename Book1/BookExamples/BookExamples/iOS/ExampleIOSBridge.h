@@ -14,8 +14,14 @@
 #include <vector>
 
 using namespace std;
+
+#ifndef ExampleIOSBridge_h
+#define ExampleIOSBridge_h
+
 class ExampleIOSBridge
 {
 public:
     static void createTextureFromFile(string file,GLuint &width,GLuint &height,GLuint &texture);
 };
+
+#endif

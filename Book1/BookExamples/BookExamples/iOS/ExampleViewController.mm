@@ -18,6 +18,8 @@
     self.glview = (GLKView*)self.view;
     self.glview.context = self.context;
     [EAGLContext setCurrentContext:self.context];
+    self.example->viewWidth = self.view.frame.size.width;
+    self.example->viewHeight = self.view.frame.size.height;
     self.example->setup();
 //    EAGLContext *context = [EAGLContext currentContext];
 //    GLuint buffer0;

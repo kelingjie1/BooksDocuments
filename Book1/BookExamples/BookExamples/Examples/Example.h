@@ -24,7 +24,11 @@ static inline void LKLogError(string str)
 
 class Example
 {
+public:
+    float viewWidth;
+    float viewHeight;
 protected:
+
     double totalTime;
     clock_t lastTime;
     GLuint program;
