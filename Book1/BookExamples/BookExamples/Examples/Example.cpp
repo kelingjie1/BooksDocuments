@@ -17,7 +17,8 @@ void Example::setupShader(string vs, string fs)
     fstream vsFile(ExampleUtil::instance->resourcesDir+"/shader/"+vs,ios::in);
     fstream fsFile(ExampleUtil::instance->resourcesDir+"/shader/"+fs,ios::in);
     
-    
+    memset(vsStr, 0, 2000);
+    memset(fsStr, 0, 2000);
     vsFile.read(vsStr, 2000);
     fsFile.read(fsStr, 2000);
     
@@ -82,4 +83,15 @@ void Example::render()
     }
     lastTime = newTime;
     totalTime += timeDelta;
+}
+
+void Example::release()
+{
+    if (program)
+    {
+        glDeleteProgram(program);
+        program = 0;
+    }
+    lastTime = 0;
+    totalTime = 0;
 }

@@ -36,7 +36,7 @@ void Example4::render()
     //在没有使用VBO的情况下用来传递数据
     //在使用VBO的情况下用来表示数据在VBO中的偏移
     glVertexAttribPointer(0, 2, GL_FLOAT, false, 0, 0);
-    int index = (int)totalTime/2%7;
+    int index = (int)totalTime%7;
     GLsizei vertice_num = (GLsizei)vertice.size()/2;
     if (index==0)
     {

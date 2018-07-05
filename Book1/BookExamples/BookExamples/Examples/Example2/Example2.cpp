@@ -53,7 +53,7 @@ void Example2::render()
     glEnableVertexAttribArray(0);
     //向0号顶点数组传递数据
     glVertexAttribPointer(0, 2, GL_FLOAT, false, 0, vertice.data());
-    int index = (int)totalTime/2%7;
+    int index = (int)totalTime%7;
     glLineWidth(10);
     if (index==0)
     {
@@ -90,11 +90,5 @@ void Example2::render()
         //绘制三角形扇形(0-1-2,0-2-3,0-3-4,0-4-5)
         glDrawArrays(GL_TRIANGLE_FAN, 0, vertice_num);
     }
-    
-    
-    
-    
-    
-    
-    
+
 }

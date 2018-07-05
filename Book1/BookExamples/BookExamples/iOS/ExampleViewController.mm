@@ -39,4 +39,9 @@
     self.example->render();
 }
 
+- (void)dealloc
+{
+    self.example->release();
+}
+
 @end

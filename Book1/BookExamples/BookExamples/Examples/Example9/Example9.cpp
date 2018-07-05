@@ -8,23 +8,13 @@
 
 #include "Example9.h"
 
-const GLfloat spriteWidth = 100.0/1024.0;
-const GLfloat spriteHeight = 100.0/1024.0;
-const int spriteRowCount = 10;
-const int spriteColumnCount = 10;
-const int spriteCount = spriteRowCount*spriteColumnCount;
-
 void Example9::setup()
 {
     setupShader("Example9.vs", "Example9.fs");
     texLocation = glGetUniformLocation(program, "tex");
-    xLocation = glGetUniformLocation(program, "x");
-    yLocation = glGetUniformLocation(program, "y");
-    widthLocation = glGetUniformLocation(program, "width");
-    heightLocation = glGetUniformLocation(program, "height");
     mvpLocation = glGetUniformLocation(program, "mvp");
     GLuint width,height;
-    ExampleIOSBridge::createTextureFromFile("star.png", width, height, texture);
+    ExampleIOSBridge::createTextureFromFile("64.jpg", width, height, texture);
     vertice.resize(4);
     vertice[0].x = -1;
     vertice[0].y = -1;
@@ -49,9 +39,6 @@ void Example9::setup()
     vertice[3].z = 0;
     vertice[3].u = 1;
     vertice[3].v = 0;
-    
-    viewMatrix = ExampleUtil::Matrix4MakeLookAt(0, 0, -10, 0, 0, 0, 0, 1, 0);
-    projectionMatrix = ExampleUtil::Matrix4MakePerspective(viewWidth, viewHeight, 3.1415926/4, 1, 10000);
 }
 
 void Example9::render()
@@ -63,23 +50,19 @@ void Example9::render()
     glEnableVertexAttribArray(0);
     glEnableVertexAttribArray(1);
     glUniform1i(texLocation, 0);
-    GLuint index = (int)(totalTime*10)%200;
-    //ping-pong模式，往返播放
-    if (index>=100)
-    {
-        index = 199-index;
-    }
-    //计算行列位置
-    GLfloat x = (int)(index%spriteRowCount);
-    GLfloat y = (int)(index/spriteRowCount);
     
-    //设置相关变量
-    glUniform1f(xLocation, x);
-    glUniform1f(yLocation, y);
-    glUniform1f(widthLocation, spriteWidth);
-    glUniform1f(heightLocation, spriteHeight);
-    Matrix4f modelMatrix = ExampleUtil::Matrix4MakeYRotation(totalTime);
+    //构造模型坐标变换矩阵(根据时间进行旋转)
+    modelMatrix = ExampleUtil::Matrix4MakeYRotation(totalTime);
+    
+    //构造观察矩阵，相机位置（0，0，-10），目标位置（0，0，0），上方向向量（0，1，0）
+    viewMatrix = ExampleUtil::Matrix4MakeLookAt(0, 0, -10, 0, 0, 0, 0, 1, 0);
+    
+    //构造透视投影矩阵，传入视窗尺寸viewWidth，viewHeight，及投影角度PI/4，近裁面距离1，远裁面距离10000
+    projectionMatrix = ExampleUtil::Matrix4MakePerspective(viewWidth, viewHeight, 3.1415926/4, 1, 10000);
+    
+    //计算MVP矩阵
     Matrix4f mvpMatrix = projectionMatrix*viewMatrix*modelMatrix;
+    //传入矩阵数据，列优先存储
     glUniformMatrix4fv(mvpLocation, 1, false, mvpMatrix.data());
     
     glActiveTexture(GL_TEXTURE0);
@@ -88,5 +71,6 @@ void Example9::render()
     glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     glVertexAttribPointer(0, 3, GL_FLOAT, false, sizeof(Example9Vertex), vertice.data());
     glVertexAttribPointer(1, 2, GL_FLOAT, false, sizeof(Example9Vertex), (char*)vertice.data()+sizeof(GLfloat)*3);
+    //绘制三角形扇形，形成正方形
     glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
 }

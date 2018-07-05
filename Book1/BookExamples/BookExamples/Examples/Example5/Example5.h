@@ -19,6 +19,7 @@ public:
     GLuint ebo;
     virtual void setup();
     virtual void render();
+    virtual void release();
 };
 
 #endif /* Example5_h */

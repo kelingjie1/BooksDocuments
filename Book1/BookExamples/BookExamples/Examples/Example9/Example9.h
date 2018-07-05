@@ -26,10 +26,6 @@ class Example9 : public Example
 protected:
     GLuint texture;
     GLuint texLocation;
-    GLuint xLocation;
-    GLuint yLocation;
-    GLuint widthLocation;
-    GLuint heightLocation;
     GLuint mvpLocation;
     
     vector<Example9Vertex> vertice;

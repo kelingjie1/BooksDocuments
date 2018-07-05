@@ -83,3 +83,19 @@ void Example5::render()
     glDrawElements(GL_TRIANGLES, (GLsizei)indice.size(), GL_UNSIGNED_SHORT, 0);
     
 }
+
+void Example5::release()
+{
+    if (vbo)
+    {
+        glDeleteBuffers(1, &vbo);
+        vbo = 0;
+    }
+    if (ebo)
+    {
+        glDeleteBuffers(1, &ebo);
+        ebo = 0;
+    }
+    
+}
+

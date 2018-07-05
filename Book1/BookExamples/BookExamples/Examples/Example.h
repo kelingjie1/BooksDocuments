@@ -36,6 +36,7 @@ public:
     virtual void setupShader(string vs,string fs);
     virtual void setup();
     virtual void render();
+    virtual void release();
 };
 
 
