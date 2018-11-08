@@ -60,7 +60,11 @@ void ExampleMemoryMapping::setup()
     //将缓冲区绑定到索引缓冲区
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
     //向索引缓冲区中传递数据
-    glBufferData(GL_ELEMENT_ARRAY_BUFFER, indice.size()*sizeof(GLushort), indice.data(), GL_STREAM_DRAW);
+    length = (GLuint)(indice.size()*sizeof(GLushort));
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, length, nullptr, GL_STREAM_DRAW);
+    data = glMapBufferRange(GL_ELEMENT_ARRAY_BUFFER, 0, length, GL_MAP_WRITE_BIT|GL_MAP_READ_BIT);
+    memcpy(data, indice.data(), length);
+    glUnmapBuffer(GL_ELEMENT_ARRAY_BUFFER);
     //取消索引缓冲区绑定
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
