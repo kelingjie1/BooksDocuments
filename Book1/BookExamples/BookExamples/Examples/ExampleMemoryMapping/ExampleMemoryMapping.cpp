@@ -46,11 +46,15 @@ void ExampleMemoryMapping::setup()
     glGenBuffers(1, &vbo);
     //将缓冲区绑定到顶点缓冲区
     glBindBuffer(GL_ARRAY_BUFFER, vbo);
-    //向顶点缓冲区中传递数据
+    //计算缓冲区大小
     GLuint length = (GLuint)(sizeof(GLfloat)*vertice.size());
+    //在显存中分配一块指定大小的区域
     glBufferData(GL_ARRAY_BUFFER, length, nullptr, GL_STREAM_DRAW);
+    //将顶点缓冲区所在的显存映射到内存上
     void *data = glMapBufferRange(GL_ARRAY_BUFFER, 0, length, GL_MAP_WRITE_BIT|GL_MAP_READ_BIT);
+    //拷贝数据
     memcpy(data, vertice.data(), length);
+    //关闭内存映射
     glUnmapBuffer(GL_ARRAY_BUFFER);
     //取消顶点缓冲区绑定
     glBindBuffer(GL_ARRAY_BUFFER, 0);
@@ -59,11 +63,15 @@ void ExampleMemoryMapping::setup()
     glGenBuffers(1, &ebo);
     //将缓冲区绑定到索引缓冲区
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, ebo);
-    //向索引缓冲区中传递数据
+    //计算缓冲区大小
     length = (GLuint)(indice.size()*sizeof(GLushort));
+    //在显存中分配一块指定大小的区域
     glBufferData(GL_ELEMENT_ARRAY_BUFFER, length, nullptr, GL_STREAM_DRAW);
+    //将索引缓冲区所在的显存映射到内存上
     data = glMapBufferRange(GL_ELEMENT_ARRAY_BUFFER, 0, length, GL_MAP_WRITE_BIT|GL_MAP_READ_BIT);
+    //拷贝数据
     memcpy(data, indice.data(), length);
+    //关闭内存映射
     glUnmapBuffer(GL_ELEMENT_ARRAY_BUFFER);
     //取消索引缓冲区绑定
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
