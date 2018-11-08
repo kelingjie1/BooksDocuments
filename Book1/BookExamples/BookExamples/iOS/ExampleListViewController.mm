@@ -15,6 +15,7 @@
 #import "ExampleVBO.h"
 #import "ExampleEBO.h"
 #import "ExampleVAO.h"
+#import "ExampleMemoryMapping.h"
 #import "ExampleTextureMapping.h"
 #import "ExampleTextureAnimation.h"
 #import "ExampleBase3D.h"
@@ -66,15 +67,16 @@ DemoData *Demo(NSString *title,Example *example)
 {
     [super viewDidLoad];
     ExampleUtil::instance->resourcesDir = [[[NSBundle mainBundle] resourcePath] cStringUsingEncoding:NSUTF8StringEncoding];
-    self.demoDatas = @[Demo(@"Example1 -- 清空缓冲区", new ExampleClearBuffer()),
-                       Demo(@"Example2 -- 绘制图像", new ExampleBaseShader()),
-                       Demo(@"Example3 -- 使用顶点索引", new ExampleVertexIndice()),
-                       Demo(@"Example4 -- 使用顶点缓冲区(VBO)", new ExampleVBO()),
-                       Demo(@"Example5 -- 使用索引缓冲区(EBO)", new ExampleEBO()),
-                       Demo(@"Example6 -- 使用顶点数组对象(VAO)", new ExampleVAO()),
-                       Demo(@"Example7 -- 创建并使用纹理", new ExampleTextureMapping()),
-                       Demo(@"Example8 -- 纹理动画", new ExampleTextureAnimation()),
-                       Demo(@"Example9 -- 三维场景", new ExampleBase3D()),
+    self.demoDatas = @[Demo(@"Example -- 清空缓冲区", new ExampleClearBuffer()),
+                       Demo(@"Example -- 绘制图像", new ExampleBaseShader()),
+                       Demo(@"Example -- 使用顶点索引", new ExampleVertexIndice()),
+                       Demo(@"Example -- 使用顶点缓冲区(VBO)", new ExampleVBO()),
+                       Demo(@"Example -- 使用索引缓冲区(EBO)", new ExampleEBO()),
+                       Demo(@"Example -- 使用顶点数组对象(VAO)", new ExampleVAO()),
+                       Demo(@"Example -- 内存映射", new ExampleMemoryMapping()),
+                       Demo(@"Example -- 创建并使用纹理", new ExampleTextureMapping()),
+                       Demo(@"Example -- 纹理动画", new ExampleTextureAnimation()),
+                       Demo(@"Example -- 三维场景", new ExampleBase3D()),
                        ];
 }
 

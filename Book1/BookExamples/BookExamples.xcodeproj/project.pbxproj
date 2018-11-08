@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		070BCCC3207CEC910034A09C /* image in Resources */ = {isa = PBXBuildFile; fileRef = 070BCCC2207CEC900034A09C /* image */; };
 		070BCCCA207CEE410034A09C /* ExampleIOSBridge.mm in Sources */ = {isa = PBXBuildFile; fileRef = 070BCCC9207CEE410034A09C /* ExampleIOSBridge.mm */; };
+		0729D6DB21941FDF00713F05 /* ExampleMemoryMapping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0729D6D921941FDF00713F05 /* ExampleMemoryMapping.cpp */; };
 		07314E61206CDB250082D5B4 /* Example20.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E3E206CDB230082D5B4 /* Example20.cpp */; };
 		07314E62206CDB250082D5B4 /* Example13.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E41206CDB230082D5B4 /* Example13.cpp */; };
 		07314E63206CDB250082D5B4 /* Example15.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E44206CDB230082D5B4 /* Example15.cpp */; };
@@ -47,6 +48,8 @@
 		070BCCC2207CEC900034A09C /* image */ = {isa = PBXFileReference; lastKnownFileType = folder; path = image; sourceTree = "<group>"; };
 		070BCCC8207CEE410034A09C /* ExampleIOSBridge.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleIOSBridge.h; sourceTree = "<group>"; };
 		070BCCC9207CEE410034A09C /* ExampleIOSBridge.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = ExampleIOSBridge.mm; sourceTree = "<group>"; };
+		0729D6D921941FDF00713F05 /* ExampleMemoryMapping.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleMemoryMapping.cpp; sourceTree = "<group>"; };
+		0729D6DA21941FDF00713F05 /* ExampleMemoryMapping.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleMemoryMapping.h; sourceTree = "<group>"; };
 		07314E3E206CDB230082D5B4 /* Example20.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example20.cpp; sourceTree = "<group>"; };
 		07314E3F206CDB230082D5B4 /* Example20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example20.h; sourceTree = "<group>"; };
 		07314E41206CDB230082D5B4 /* Example13.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example13.cpp; sourceTree = "<group>"; };
@@ -126,6 +129,15 @@
 			children = (
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		0729D6D821941FDF00713F05 /* ExampleMemoryMapping */ = {
+			isa = PBXGroup;
+			children = (
+				0729D6DA21941FDF00713F05 /* ExampleMemoryMapping.h */,
+				0729D6D921941FDF00713F05 /* ExampleMemoryMapping.cpp */,
+			);
+			path = ExampleMemoryMapping;
 			sourceTree = "<group>";
 		};
 		07314E3D206CDB230082D5B4 /* Example20 */ = {
@@ -314,6 +326,7 @@
 				073E174D205261F7007B1BAF /* ExampleVBO */,
 				073E1750205261F7007B1BAF /* ExampleEBO */,
 				073E1747205261F6007B1BAF /* ExampleVAO */,
+				0729D6D821941FDF00713F05 /* ExampleMemoryMapping */,
 				073E1741205261F6007B1BAF /* ExampleTextureMapping */,
 				073E1744205261F6007B1BAF /* ExampleTextureAnimation */,
 				07314E4C206CDB240082D5B4 /* ExampleBase3D */,
@@ -487,6 +500,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				073E1753205261F7007B1BAF /* ExampleBaseShader.cpp in Sources */,
+				0729D6DB21941FDF00713F05 /* ExampleMemoryMapping.cpp in Sources */,
 				07314E6A206CDB250082D5B4 /* Example16.cpp in Sources */,
 				07314E65206CDB250082D5B4 /* Example18.cpp in Sources */,
 				07314E62206CDB250082D5B4 /* Example13.cpp in Sources */,
