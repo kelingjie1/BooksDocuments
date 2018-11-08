@@ -6,55 +6,38 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#include "Example2.h"
+#include "ExampleVBO.h"
 
-const int vertice_num = 6;
-
-void Example2::setup()
+void ExampleVBO::setup()
 {
-    Example::setup();
-    //编译顶点着色器和片段着色器
-    setupShader("Example2.vs", "Example2.fs");
+    ExampleBaseShader::setup();
+    //生成一个缓冲区对象编号
+    glGenBuffers(1, &vbo);
+    //将缓冲区绑定到顶点缓冲区
+    glBindBuffer(GL_ARRAY_BUFFER, vbo);
+    //向顶点缓冲区中传递数据
+    glBufferData(GL_ARRAY_BUFFER, sizeof(GLfloat)*vertice.size(), vertice.data(), GL_STREAM_DRAW);
+    //取消顶点缓冲区绑定
+    glBindBuffer(GL_ARRAY_BUFFER, 0);
     
-    //初始化顶点数据
-    vertice.resize(vertice_num*2);
-    int offset = 0;
-    vertice[offset] = 0.0;
-    vertice[offset+1] = 0.0;
-    
-    offset+=2;
-    vertice[offset] = 0.2;
-    vertice[offset+1] = 0.4;
-    
-    offset+=2;
-    vertice[offset] = 0.4;
-    vertice[offset+1] = 0.4;
-
-    offset+=2;
-    vertice[offset] = 0.4;
-    vertice[offset+1] = 0.0;
-    
-    offset+=2;
-    vertice[offset] = 0.6;
-    vertice[offset+1] = 0.2;
-    
-    offset+=2;
-    vertice[offset] = 0.6;
-    vertice[offset+1] = 0.6;
 }
 
-void Example2::render()
+void ExampleVBO::render()
 {
     Example::render();
     glClearColor(1, 0, 0, 1);
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(program);
-    //允许使用0号顶点数组
+    
+    //重新将刚刚建立好的缓冲区绑定到顶点缓冲区
+    glBindBuffer(GL_ARRAY_BUFFER, vbo);
     glEnableVertexAttribArray(0);
-    //向0号顶点数组传递数据
-    glVertexAttribPointer(0, 2, GL_FLOAT, false, 0, vertice.data());
+    //最后一个参数和Examle2就不一样了
+    //在没有使用VBO的情况下用来传递数据
+    //在使用VBO的情况下用来表示数据在VBO中的偏移
+    glVertexAttribPointer(0, 2, GL_FLOAT, false, 0, 0);
     int index = (int)totalTime%7;
-    glLineWidth(10);
+    GLsizei vertice_num = (GLsizei)vertice.size()/2;
     if (index==0)
     {
         //绘制点
@@ -67,12 +50,12 @@ void Example2::render()
     }
     else if (index==2)
     {
-        //连续绘制线(0-1-2-3-4-5-0)
+        //循环绘制线(0-1-2-3-4-5-0)
         glDrawArrays(GL_LINE_STRIP, 0, vertice_num);
     }
     else if (index==3)
     {
-        //循环绘制线(0-1-2-3-4-5)
+        //连续绘制线(0-1-2-3-4-5)
         glDrawArrays(GL_LINE_LOOP, 0, vertice_num);
     }
     else if (index==4)
@@ -90,5 +73,5 @@ void Example2::render()
         //绘制三角形扇形(0-1-2,0-2-3,0-3-4,0-4-5)
         glDrawArrays(GL_TRIANGLE_FAN, 0, vertice_num);
     }
-
 }
+

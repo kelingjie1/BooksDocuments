@@ -6,24 +6,19 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#ifndef Example8_h
-#define Example8_h
+#ifndef Example7_h
+#define Example7_h
 
 #include "Example.h"
-class Example8 : public Example
+class ExampleTextureMapping : public Example
 {
 public:
     GLuint texture;
     GLuint texLocation;
-    GLuint xLocation;
-    GLuint yLocation;
-    GLuint widthLocation;
-    GLuint heightLocation;
-    
     vector<GLfloat> vertice;
     vector<GLfloat> texCoords;
     virtual void setup();
     virtual void render();
 };
 
-#endif /* Example8_h */
+#endif /* Example7_h */

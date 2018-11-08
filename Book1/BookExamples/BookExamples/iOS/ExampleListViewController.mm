@@ -9,15 +9,15 @@
 #import "ExampleListViewController.h"
 #import "ExampleViewController.h"
 #import "ExampleUtil.h"
-#import "Example1.h"
-#import "Example2.h"
-#import "Example3.h"
-#import "Example4.h"
-#import "Example5.h"
-#import "Example6.h"
-#import "Example7.h"
-#import "Example8.h"
-#import "Example9.h"
+#import "ExampleClearBuffer.h"
+#import "ExampleBaseShader.h"
+#import "ExampleVertexIndice.h"
+#import "ExampleVBO.h"
+#import "ExampleEBO.h"
+#import "ExampleVAO.h"
+#import "ExampleTextureMapping.h"
+#import "ExampleTextureAnimation.h"
+#import "ExampleBase3D.h"
 #import "Example11.h"
 #import "Example12.h"
 #import "Example13.h"
@@ -66,15 +66,15 @@ DemoData *Demo(NSString *title,Example *example)
 {
     [super viewDidLoad];
     ExampleUtil::instance->resourcesDir = [[[NSBundle mainBundle] resourcePath] cStringUsingEncoding:NSUTF8StringEncoding];
-    self.demoDatas = @[Demo(@"Example1 -- 清空缓冲区", new Example1()),
-                       Demo(@"Example2 -- 绘制图像", new Example2()),
-                       Demo(@"Example3 -- 使用顶点索引", new Example3()),
-                       Demo(@"Example4 -- 使用顶点缓冲区(VBO)", new Example4()),
-                       Demo(@"Example5 -- 使用索引缓冲区(EBO)", new Example5()),
-                       Demo(@"Example6 -- 使用顶点数组对象(VAO)", new Example6()),
-                       Demo(@"Example7 -- 创建并使用纹理", new Example7()),
-                       Demo(@"Example8 -- 纹理动画", new Example8()),
-                       Demo(@"Example9 -- 三维场景", new Example9()),
+    self.demoDatas = @[Demo(@"Example1 -- 清空缓冲区", new ExampleClearBuffer()),
+                       Demo(@"Example2 -- 绘制图像", new ExampleBaseShader()),
+                       Demo(@"Example3 -- 使用顶点索引", new ExampleVertexIndice()),
+                       Demo(@"Example4 -- 使用顶点缓冲区(VBO)", new ExampleVBO()),
+                       Demo(@"Example5 -- 使用索引缓冲区(EBO)", new ExampleEBO()),
+                       Demo(@"Example6 -- 使用顶点数组对象(VAO)", new ExampleVAO()),
+                       Demo(@"Example7 -- 创建并使用纹理", new ExampleTextureMapping()),
+                       Demo(@"Example8 -- 纹理动画", new ExampleTextureAnimation()),
+                       Demo(@"Example9 -- 三维场景", new ExampleBase3D()),
                        ];
 }
 

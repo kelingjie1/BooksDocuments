@@ -6,12 +6,12 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#include "Example3.h"
+#include "ExampleVertexIndice.h"
 
 
 const int vertice_num = 4;
 
-void Example3::setup()
+void ExampleVertexIndice::setup()
 {
     Example::setup();
     setupShader("Example2.vs", "Example2.fs");
@@ -44,7 +44,7 @@ void Example3::setup()
     indice.push_back(3);
 }
 
-void Example3::render()
+void ExampleVertexIndice::render()
 {
     Example::render();
     glClearColor(1, 0, 0, 1);

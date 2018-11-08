@@ -6,9 +6,9 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#include "Example7.h"
+#include "ExampleTextureMapping.h"
 
-void Example7::setup()
+void ExampleTextureMapping::setup()
 {
     setupShader("Example7.vs", "Example7.fs");
     texLocation = glGetUniformLocation(program, "tex");
@@ -38,7 +38,7 @@ void Example7::setup()
     texCoords[5] = 0;
 }
 
-void Example7::render()
+void ExampleTextureMapping::render()
 {
     Example::render();
     glClearColor(1, 0, 0, 1);

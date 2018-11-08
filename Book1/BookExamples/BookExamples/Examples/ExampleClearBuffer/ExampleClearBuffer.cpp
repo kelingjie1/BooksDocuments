@@ -6,14 +6,14 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#include "Example1.h"
+#include "ExampleClearBuffer.h"
 
-void Example1::setup()
+void ExampleClearBuffer::setup()
 {
     
 }
 
-void Example1::render()
+void ExampleClearBuffer::render()
 {
     //设置清除颜色(RGBA)
     glClearColor(1, 0, 0, 1);

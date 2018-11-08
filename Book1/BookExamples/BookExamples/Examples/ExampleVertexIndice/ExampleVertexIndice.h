@@ -6,17 +6,17 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#ifndef Example2_h
-#define Example2_h
+#ifndef Example3_h
+#define Example3_h
 
 #include "Example.h"
-class Example2 : public Example
+class ExampleVertexIndice : public Example
 {
 public:
-    std::vector<GLfloat> vertice;
+    vector<GLfloat> vertice;
+    vector<GLushort> indice;
     virtual void setup();
     virtual void render();
 };
 
-
-#endif /* Example2_h */
+#endif /* Example3_h */

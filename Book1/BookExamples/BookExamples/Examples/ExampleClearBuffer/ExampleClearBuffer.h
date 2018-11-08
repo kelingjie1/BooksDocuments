@@ -10,7 +10,7 @@
 #define Example1_h
 
 #include "Example.h"
-class Example1 : public Example
+class ExampleClearBuffer : public Example
 {
 public:
     virtual void setup();

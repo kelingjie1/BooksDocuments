@@ -6,9 +6,9 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#include "Example9.h"
+#include "ExampleBase3D.h"
 
-void Example9::setup()
+void ExampleBase3D::setup()
 {
     setupShader("Example9.vs", "Example9.fs");
     texLocation = glGetUniformLocation(program, "tex");
@@ -41,7 +41,7 @@ void Example9::setup()
     vertice[3].v = 0;
 }
 
-void Example9::render()
+void ExampleBase3D::render()
 {
     Example::render();
     glClearColor(1, 0, 0, 1);

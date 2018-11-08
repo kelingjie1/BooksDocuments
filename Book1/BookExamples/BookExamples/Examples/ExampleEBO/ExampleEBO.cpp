@@ -6,11 +6,11 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#include "Example5.h"
+#include "ExampleEBO.h"
 
 const int vertice_num = 4;
 
-void Example5::setup()
+void ExampleEBO::setup()
 {
     Example::setup();
     setupShader("Example2.vs", "Example2.fs");
@@ -61,7 +61,7 @@ void Example5::setup()
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 
-void Example5::render()
+void ExampleEBO::render()
 {
     Example::render();
     glClearColor(1, 0, 0, 1);
@@ -84,7 +84,7 @@ void Example5::render()
     
 }
 
-void Example5::release()
+void ExampleEBO::release()
 {
     if (vbo)
     {

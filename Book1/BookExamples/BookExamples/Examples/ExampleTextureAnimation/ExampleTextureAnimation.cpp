@@ -6,7 +6,7 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#include "Example8.h"
+#include "ExampleTextureAnimation.h"
 
 const GLfloat spriteWidth = 100.0/1024.0;
 const GLfloat spriteHeight = 100.0/1024.0;
@@ -14,7 +14,7 @@ const int spriteRowCount = 10;
 const int spriteColumnCount = 10;
 const int spriteCount = spriteRowCount*spriteColumnCount;
 
-void Example8::setup()
+void ExampleTextureAnimation::setup()
 {
     setupShader("Example8.vs", "Example8.fs");
     texLocation = glGetUniformLocation(program, "tex");
@@ -52,7 +52,7 @@ void Example8::setup()
     texCoords[7] = 0;
 }
 
-void Example8::render()
+void ExampleTextureAnimation::render()
 {
     Example::render();
     glClearColor(1, 0, 0, 1);

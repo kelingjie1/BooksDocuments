@@ -21,7 +21,7 @@ struct Example9Vertex
     
 } __attribute__((packed));
 
-class Example9 : public Example
+class ExampleBase3D : public Example
 {
 protected:
     GLuint texture;

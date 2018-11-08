@@ -9,8 +9,8 @@
 #ifndef Example4_h
 #define Example4_h
 
-#include "Example2.h"
-class Example4 : public Example2
+#include "ExampleBaseShader.h"
+class ExampleVBO : public ExampleBaseShader
 {
 public:
     GLuint vbo;

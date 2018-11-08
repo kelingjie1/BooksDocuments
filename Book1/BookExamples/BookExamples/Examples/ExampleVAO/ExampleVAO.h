@@ -6,20 +6,20 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#ifndef Example5_h
-#define Example5_h
+#ifndef Example6_h
+#define Example6_h
 
 #include "Example.h"
-class Example5 : public Example
+class ExampleVAO : public Example
 {
 public:
     vector<GLfloat> vertice;
     vector<GLushort> indice;
     GLuint vbo;
     GLuint ebo;
+    GLuint vao;
     virtual void setup();
     virtual void render();
-    virtual void release();
 };
 
-#endif /* Example5_h */
+#endif /* Example6_h */

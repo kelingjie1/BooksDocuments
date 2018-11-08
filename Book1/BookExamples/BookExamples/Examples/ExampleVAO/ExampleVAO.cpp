@@ -6,11 +6,11 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#include "Example6.h"
+#include "ExampleVAO.h"
 
 const int vertice_num = 4;
 
-void Example6::setup()
+void ExampleVAO::setup()
 {
     Example::setup();
     setupShader("Example2.vs", "Example2.fs");
@@ -75,7 +75,7 @@ void Example6::setup()
     glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, 0);
 }
 
-void Example6::render()
+void ExampleVAO::render()
 {
     Example::render();
     glClearColor(1, 0, 0, 1);
