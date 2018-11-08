@@ -6,8 +6,7 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#ifndef Example8_h
-#define Example8_h
+#pragma once
 
 #include "Example.h"
 class ExampleTextureAnimation : public Example
@@ -26,4 +25,3 @@ public:
     virtual void render();
 };
 
-#endif /* Example8_h */

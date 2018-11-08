@@ -6,6 +6,7 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
+#pragma once
 #include <OpenGLES/ES3/gl.h>
 #include <OpenGLES/ES3/glext.h>
 #include <string>
@@ -15,13 +16,8 @@
 
 using namespace std;
 
-#ifndef ExampleIOSBridge_h
-#define ExampleIOSBridge_h
-
 class ExampleIOSBridge
 {
 public:
     static void createTextureFromFile(string file,GLuint &width,GLuint &height,GLuint &texture);
 };
-
-#endif

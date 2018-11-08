@@ -6,9 +6,7 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#ifndef Example2_h
-#define Example2_h
-
+#pragma once
 #include "Example.h"
 class ExampleBaseShader : public Example
 {
@@ -18,5 +16,3 @@ public:
     virtual void render();
 };
 
-
-#endif /* Example2_h */

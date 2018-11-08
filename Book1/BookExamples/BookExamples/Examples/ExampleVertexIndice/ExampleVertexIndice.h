@@ -6,8 +6,7 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#ifndef Example3_h
-#define Example3_h
+#pragma once
 
 #include "Example.h"
 class ExampleVertexIndice : public Example
@@ -19,4 +18,3 @@ public:
     virtual void render();
 };
 
-#endif /* Example3_h */

@@ -6,8 +6,7 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#ifndef Example9_h
-#define Example9_h
+#pragma once
 
 #include "Example.h"
 #include "ExampleUtil.h"
@@ -38,4 +37,3 @@ public:
     virtual void render();
 };
 
-#endif /* Example9_h */

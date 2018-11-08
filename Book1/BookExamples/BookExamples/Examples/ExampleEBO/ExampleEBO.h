@@ -6,8 +6,7 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#ifndef Example5_h
-#define Example5_h
+#pragma once
 
 #include "Example.h"
 class ExampleEBO : public Example
@@ -22,4 +21,3 @@ public:
     virtual void release();
 };
 
-#endif /* Example5_h */

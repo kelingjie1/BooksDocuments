@@ -6,8 +6,7 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#ifndef Example1_h
-#define Example1_h
+#pragma once
 
 #include "Example.h"
 class ExampleClearBuffer : public Example
@@ -17,5 +16,3 @@ public:
     virtual void render();
 };
 
-
-#endif /* Example1_h */

@@ -5,13 +5,11 @@
 //  Created by lingtonke on 2018/3/9.
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
+
+#pragma once
 #include <string>
 #include "ExampleIOSBridge.h"
 #include "Eigen/Eigen"
-
-
-#ifndef ExampleUtil_h
-#define ExampleUtil_h
 
 using namespace std;
 using namespace Eigen;
@@ -39,5 +37,3 @@ public:
     static Matrix4f Matrix4MakeYRotation(float radians);
     static Matrix4f Matrix4MakeZRotation(float radians);
 };
-
-#endif /* ExampleUtil_h */

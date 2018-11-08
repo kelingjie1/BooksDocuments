@@ -6,8 +6,7 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#ifndef Example4_h
-#define Example4_h
+#pragma once
 
 #include "ExampleBaseShader.h"
 class ExampleVBO : public ExampleBaseShader
@@ -18,4 +17,3 @@ public:
     virtual void render();
 };
 
-#endif /* Example4_h */

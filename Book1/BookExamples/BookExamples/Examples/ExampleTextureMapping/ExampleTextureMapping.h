@@ -6,8 +6,7 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#ifndef Example7_h
-#define Example7_h
+#pragma once
 
 #include "Example.h"
 class ExampleTextureMapping : public Example
@@ -21,4 +20,3 @@ public:
     virtual void render();
 };
 
-#endif /* Example7_h */
