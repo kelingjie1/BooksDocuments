@@ -104,3 +104,15 @@ Matrix4f ExampleUtil::Matrix4MakeTransition(Vector3f v)
     
     return m;
 }
+
+Matrix4f ExampleUtil::Matrix4MakeScale(Vector3f v)
+{
+    
+    Matrix4f m;
+    m<< v.x(), 0.0f , 0.0f , 0.0f,
+        0.0f , v.y(), 0.0f , 0.0f,
+        0.0f , 0.0f , v.z(), 0.0f,
+        0.0f , 0.0f , 0.0f , 1.0f;
+    
+    return m;
+}

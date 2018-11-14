@@ -22,7 +22,7 @@
 #import "ExampleCube3D.h"
 #import "ExampleDepthTest.h"
 #import "ExampleCullFace.h"
-#import "Example14.h"
+#import "ExampleStencilTest.h"
 #import "Example15.h"
 #import "Example16.h"
 #import "Example17.h"
@@ -77,9 +77,10 @@ DemoData *Demo(NSString *title,Example *example)
                        Demo(@"Example -- 创建并使用纹理", new ExampleTextureMapping()),
                        Demo(@"Example -- 纹理动画", new ExampleTextureAnimation()),
                        Demo(@"Example -- 三维场景", new ExampleBase3D()),
+                       Demo(@"Example -- 背面剔除", new ExampleCullFace()),
                        Demo(@"Example -- 三维方块", new ExampleCube3D()),
                        Demo(@"Example -- 深度测试", new ExampleDepthTest()),
-                       Demo(@"Example -- 背面剔除", new ExampleCullFace()),
+                       Demo(@"Example -- 模板测试", new ExampleStencilTest()),
                        ];
 }
 

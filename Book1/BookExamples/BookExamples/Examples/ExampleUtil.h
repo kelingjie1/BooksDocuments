@@ -39,4 +39,5 @@ public:
     static Matrix4f Matrix4MakeYRotation(float radians);
     static Matrix4f Matrix4MakeZRotation(float radians);
     static Matrix4f Matrix4MakeTransition(Vector3f v);
+    static Matrix4f Matrix4MakeScale(Vector3f v);
 };

@@ -44,6 +44,7 @@
 		073E175F2052701F007B1BAF /* ExampleUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 073E175D2052701F007B1BAF /* ExampleUtil.cpp */; };
 		073E176720527534007B1BAF /* shader in Resources */ = {isa = PBXBuildFile; fileRef = 073E176620527534007B1BAF /* shader */; };
 		07D90F38219BC1DF0089551E /* ExampleCullFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D90F36219BC1DF0089551E /* ExampleCullFace.cpp */; };
+		07D90F5C219BCEA40089551E /* ExampleStencilTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D90F5A219BCEA40089551E /* ExampleStencilTest.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -115,6 +116,8 @@
 		073E176620527534007B1BAF /* shader */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shader; sourceTree = "<group>"; };
 		07D90F36219BC1DF0089551E /* ExampleCullFace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleCullFace.cpp; sourceTree = "<group>"; };
 		07D90F37219BC1DF0089551E /* ExampleCullFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleCullFace.h; sourceTree = "<group>"; };
+		07D90F5A219BCEA40089551E /* ExampleStencilTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleStencilTest.cpp; sourceTree = "<group>"; };
+		07D90F5B219BCEA40089551E /* ExampleStencilTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleStencilTest.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -345,9 +348,10 @@
 				073E1741205261F6007B1BAF /* ExampleTextureMapping */,
 				073E1744205261F6007B1BAF /* ExampleTextureAnimation */,
 				07314E4C206CDB240082D5B4 /* ExampleBase3D */,
+				07D90F35219BC1DF0089551E /* ExampleCullFace */,
 				0729D6DC219A75D600713F05 /* ExampleCube3D */,
 				07314E46206CDB240082D5B4 /* ExampleDepthTest */,
-				07D90F35219BC1DF0089551E /* ExampleCullFace */,
+				07D90F59219BCEA40089551E /* ExampleStencilTest */,
 				07314E5E206CDB250082D5B4 /* Example11 */,
 				07314E55206CDB240082D5B4 /* Example12 */,
 				07314E40206CDB230082D5B4 /* Example13 */,
@@ -452,6 +456,15 @@
 			path = ExampleCullFace;
 			sourceTree = "<group>";
 		};
+		07D90F59219BCEA40089551E /* ExampleStencilTest */ = {
+			isa = PBXGroup;
+			children = (
+				07D90F5B219BCEA40089551E /* ExampleStencilTest.h */,
+				07D90F5A219BCEA40089551E /* ExampleStencilTest.cpp */,
+			);
+			path = ExampleStencilTest;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -526,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				073E1753205261F7007B1BAF /* ExampleBaseShader.cpp in Sources */,
+				07D90F5C219BCEA40089551E /* ExampleStencilTest.cpp in Sources */,
 				0729D6DB21941FDF00713F05 /* ExampleMemoryMapping.cpp in Sources */,
 				0729D6DF219A75D600713F05 /* ExampleCube3D.cpp in Sources */,
 				07314E6A206CDB250082D5B4 /* Example16.cpp in Sources */,
