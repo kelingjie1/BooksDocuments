@@ -17,6 +17,7 @@
     self.shareGroup = self.context.sharegroup;
     self.glview = (GLKView*)self.view;
     self.glview.context = self.context;
+    self.glview.drawableDepthFormat = GLKViewDrawableDepthFormat24;
     [EAGLContext setCurrentContext:self.context];
     self.example->viewWidth = self.view.frame.size.width;
     self.example->viewHeight = self.view.frame.size.height;

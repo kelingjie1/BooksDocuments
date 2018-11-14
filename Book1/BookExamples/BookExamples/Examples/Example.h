@@ -20,6 +20,16 @@ static inline void LKLogError(string str)
     cout<<str;
 }
 
+struct TexVertex
+{
+    GLfloat x;
+    GLfloat y;
+    GLfloat z;
+    GLfloat u;
+    GLfloat v;
+    
+} __attribute__((packed));
+
 class Example
 {
 public:

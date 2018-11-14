@@ -59,8 +59,8 @@ Matrix4f ExampleUtil::Matrix4MakeXRotation(float radians)
     
     Matrix4f m;
     m<< 1.0f, 0.0f, 0.0f, 0.0f,
-        0.0f, cos, sin, 0.0f,
-        0.0f, -sin, cos, 0.0f,
+        0.0f, cos , sin , 0.0f,
+        0.0f, -sin, cos , 0.0f,
         0.0f, 0.0f, 0.0f, 1.0f;
     
     return m;
@@ -71,9 +71,9 @@ Matrix4f ExampleUtil::Matrix4MakeYRotation(float radians)
     float cos = cosf(radians);
     float sin = sinf(radians);
     Matrix4f m;
-    m<< cos, 0.0f, -sin, 0.0f,
+    m<< cos , 0.0f, -sin, 0.0f,
         0.0f, 1.0f, 0.0f, 0.0f,
-        sin, 0.0f, cos, 0.0f,
+        sin , 0.0f, cos , 0.0f,
         0.0f, 0.0f, 0.0f, 1.0f;
     
     return m;
@@ -85,10 +85,22 @@ Matrix4f ExampleUtil::Matrix4MakeZRotation(float radians)
     float sin = sinf(radians);
     
     Matrix4f m;
-    m<< cos, sin, 0.0f, 0.0f,
-        -sin, cos, 0.0f, 0.0f,
+    m<< cos , sin , 0.0f, 0.0f,
+        -sin, cos , 0.0f, 0.0f,
         0.0f, 0.0f, 1.0f, 0.0f,
         0.0f, 0.0f, 0.0f, 1.0f;
+    
+    return m;
+}
+
+Matrix4f ExampleUtil::Matrix4MakeTransition(Vector3f v)
+{
+    
+    Matrix4f m;
+    m<< 1.0f, 0.0f, 0.0f, v.x(),
+        0.0f, 1.0f, 0.0f, v.y(),
+        0.0f, 0.0f, 1.0f, v.z(),
+        0.0f, 0.0f, 0.0f, 1.0f ;
     
     return m;
 }

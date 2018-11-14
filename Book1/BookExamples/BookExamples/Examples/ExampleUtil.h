@@ -14,6 +14,8 @@
 using namespace std;
 using namespace Eigen;
 
+#define PI 3.1415926
+
 class ExampleTexture
 {
 public:
@@ -36,4 +38,5 @@ public:
     static Matrix4f Matrix4MakeXRotation(float radians);
     static Matrix4f Matrix4MakeYRotation(float radians);
     static Matrix4f Matrix4MakeZRotation(float radians);
+    static Matrix4f Matrix4MakeTransition(Vector3f v);
 };

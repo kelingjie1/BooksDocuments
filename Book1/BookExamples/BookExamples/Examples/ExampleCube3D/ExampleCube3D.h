@@ -11,14 +11,16 @@
 #include "Example.h"
 #include "ExampleUtil.h"
 
-class ExampleBase3D : public Example
+class ExampleCube3D : public Example
 {
 protected:
     GLuint texture;
     GLuint texLocation;
-    GLuint mvpLocation;
+    GLuint vpLocation;
+    GLuint mLocation;
     
     vector<TexVertex> vertice;
+    vector<GLushort> indice;
     
     Matrix4f modelMatrix;
     Matrix4f viewMatrix;

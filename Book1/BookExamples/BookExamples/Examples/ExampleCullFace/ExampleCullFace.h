@@ -9,10 +9,10 @@
 #pragma once
 
 #include "Example.h"
-class Example10 : public Example
+#include "ExampleBase3D.h"
+class ExampleCullFace : public ExampleBase3D
 {
 public:
-    virtual void setup();
     virtual void render();
 };
 
