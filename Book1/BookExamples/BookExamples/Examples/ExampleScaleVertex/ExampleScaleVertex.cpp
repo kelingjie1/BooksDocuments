@@ -10,7 +10,7 @@
 
 void ExampleScaleVertex::setup()
 {
-    setupShader("Example9.vs", "Example9.fs");
+    setupShader("ExampleBase3D.vs", "ExampleBase3D.fs");
     texLocation = glGetUniformLocation(program, "tex");
     mvpLocation = glGetUniformLocation(program, "mvp");
     GLuint width,height;
