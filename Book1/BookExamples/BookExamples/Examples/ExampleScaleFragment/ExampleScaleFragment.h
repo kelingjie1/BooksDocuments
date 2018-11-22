@@ -9,8 +9,16 @@
 #pragma once
 
 #include "Example.h"
-class Example12 : public Example
+#include "ExampleUtil.h"
+
+class ExampleScaleFragment : public Example
 {
+protected:
+    GLuint texture;
+    GLuint texLocation;
+    GLuint scaleLocation;
+    vector<TexVertex> vertice;
+    Matrix4f modelMatrix;
 public:
     virtual void setup();
     virtual void render();

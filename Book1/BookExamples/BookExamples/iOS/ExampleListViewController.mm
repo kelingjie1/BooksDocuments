@@ -23,8 +23,8 @@
 #import "ExampleDepthTest.h"
 #import "ExampleCullFace.h"
 #import "ExampleStencilTest.h"
-#import "Example15.h"
-#import "Example16.h"
+#import "ExampleScaleVertex.h"
+#import "ExampleScaleFragment.h"
 #import "Example17.h"
 #import "Example18.h"
 #import "Example19.h"
@@ -81,6 +81,8 @@ DemoData *Demo(NSString *title,Example *example)
                        Demo(@"Example -- 三维方块", new ExampleCube3D()),
                        Demo(@"Example -- 深度测试", new ExampleDepthTest()),
                        Demo(@"Example -- 模板测试", new ExampleStencilTest()),
+                       Demo(@"Example -- 放大和缩小（顶点实现）", new ExampleScaleVertex()),
+                       Demo(@"Example -- 放大和缩小（片段实现）", new ExampleScaleFragment()),
                        ];
 }
 

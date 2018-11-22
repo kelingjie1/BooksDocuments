@@ -19,10 +19,10 @@
 		07314E66206CDB250082D5B4 /* ExampleBase3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E4D206CDB240082D5B4 /* ExampleBase3D.cpp */; };
 		07314E67206CDB250082D5B4 /* Example19.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E50206CDB240082D5B4 /* Example19.cpp */; };
 		07314E68206CDB250082D5B4 /* Example14.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E53206CDB240082D5B4 /* Example14.cpp */; };
-		07314E69206CDB250082D5B4 /* Example12.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E56206CDB240082D5B4 /* Example12.cpp */; };
+		07314E69206CDB250082D5B4 /* ExampleScaleFragment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E56206CDB240082D5B4 /* ExampleScaleFragment.cpp */; };
 		07314E6A206CDB250082D5B4 /* Example16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E59206CDB250082D5B4 /* Example16.cpp */; };
 		07314E6B206CDB250082D5B4 /* Example17.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E5C206CDB250082D5B4 /* Example17.cpp */; };
-		07314E6C206CDB250082D5B4 /* Example11.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E5F206CDB250082D5B4 /* Example11.cpp */; };
+		07314E6C206CDB250082D5B4 /* ExampleScaleVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E5F206CDB250082D5B4 /* ExampleScaleVertex.cpp */; };
 		073E171720516B88007B1BAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E171620516B88007B1BAF /* AppDelegate.m */; };
 		073E171A20516B88007B1BAF /* ExampleListViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 073E171920516B88007B1BAF /* ExampleListViewController.mm */; };
 		073E171D20516B88007B1BAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 073E171B20516B88007B1BAF /* Main.storyboard */; };
@@ -71,14 +71,14 @@
 		07314E51206CDB240082D5B4 /* Example19.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example19.h; sourceTree = "<group>"; };
 		07314E53206CDB240082D5B4 /* Example14.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example14.cpp; sourceTree = "<group>"; };
 		07314E54206CDB240082D5B4 /* Example14.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example14.h; sourceTree = "<group>"; };
-		07314E56206CDB240082D5B4 /* Example12.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example12.cpp; sourceTree = "<group>"; };
-		07314E57206CDB240082D5B4 /* Example12.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example12.h; sourceTree = "<group>"; };
+		07314E56206CDB240082D5B4 /* ExampleScaleFragment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleScaleFragment.cpp; sourceTree = "<group>"; };
+		07314E57206CDB240082D5B4 /* ExampleScaleFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleScaleFragment.h; sourceTree = "<group>"; };
 		07314E59206CDB250082D5B4 /* Example16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example16.cpp; sourceTree = "<group>"; };
 		07314E5A206CDB250082D5B4 /* Example16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example16.h; sourceTree = "<group>"; };
 		07314E5C206CDB250082D5B4 /* Example17.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example17.cpp; sourceTree = "<group>"; };
 		07314E5D206CDB250082D5B4 /* Example17.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example17.h; sourceTree = "<group>"; };
-		07314E5F206CDB250082D5B4 /* Example11.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example11.cpp; sourceTree = "<group>"; };
-		07314E60206CDB250082D5B4 /* Example11.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example11.h; sourceTree = "<group>"; };
+		07314E5F206CDB250082D5B4 /* ExampleScaleVertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleScaleVertex.cpp; sourceTree = "<group>"; };
+		07314E60206CDB250082D5B4 /* ExampleScaleVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleScaleVertex.h; sourceTree = "<group>"; };
 		073E171220516B88007B1BAF /* BookExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		073E171520516B88007B1BAF /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		073E171620516B88007B1BAF /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -230,13 +230,13 @@
 			path = Example14;
 			sourceTree = "<group>";
 		};
-		07314E55206CDB240082D5B4 /* Example12 */ = {
+		07314E55206CDB240082D5B4 /* ExampleScaleFragment */ = {
 			isa = PBXGroup;
 			children = (
-				07314E57206CDB240082D5B4 /* Example12.h */,
-				07314E56206CDB240082D5B4 /* Example12.cpp */,
+				07314E57206CDB240082D5B4 /* ExampleScaleFragment.h */,
+				07314E56206CDB240082D5B4 /* ExampleScaleFragment.cpp */,
 			);
-			path = Example12;
+			path = ExampleScaleFragment;
 			sourceTree = "<group>";
 		};
 		07314E58206CDB250082D5B4 /* Example16 */ = {
@@ -257,13 +257,13 @@
 			path = Example17;
 			sourceTree = "<group>";
 		};
-		07314E5E206CDB250082D5B4 /* Example11 */ = {
+		07314E5E206CDB250082D5B4 /* ExampleScaleVertex */ = {
 			isa = PBXGroup;
 			children = (
-				07314E60206CDB250082D5B4 /* Example11.h */,
-				07314E5F206CDB250082D5B4 /* Example11.cpp */,
+				07314E60206CDB250082D5B4 /* ExampleScaleVertex.h */,
+				07314E5F206CDB250082D5B4 /* ExampleScaleVertex.cpp */,
 			);
-			path = Example11;
+			path = ExampleScaleVertex;
 			sourceTree = "<group>";
 		};
 		073E170920516B88007B1BAF = {
@@ -352,8 +352,8 @@
 				0729D6DC219A75D600713F05 /* ExampleCube3D */,
 				07314E46206CDB240082D5B4 /* ExampleDepthTest */,
 				07D90F59219BCEA40089551E /* ExampleStencilTest */,
-				07314E5E206CDB250082D5B4 /* Example11 */,
-				07314E55206CDB240082D5B4 /* Example12 */,
+				07314E5E206CDB250082D5B4 /* ExampleScaleVertex */,
+				07314E55206CDB240082D5B4 /* ExampleScaleFragment */,
 				07314E40206CDB230082D5B4 /* Example13 */,
 				07314E52206CDB240082D5B4 /* Example14 */,
 				07314E43206CDB230082D5B4 /* Example15 */,
@@ -555,10 +555,10 @@
 				073E1755205261F7007B1BAF /* ExampleTextureAnimation.cpp in Sources */,
 				07D90F38219BC1DF0089551E /* ExampleCullFace.cpp in Sources */,
 				073E1756205261F7007B1BAF /* ExampleVAO.cpp in Sources */,
-				07314E69206CDB250082D5B4 /* Example12.cpp in Sources */,
+				07314E69206CDB250082D5B4 /* ExampleScaleFragment.cpp in Sources */,
 				073E172520516B88007B1BAF /* main.m in Sources */,
 				073E1758205261F7007B1BAF /* ExampleVBO.cpp in Sources */,
-				07314E6C206CDB250082D5B4 /* Example11.cpp in Sources */,
+				07314E6C206CDB250082D5B4 /* ExampleScaleVertex.cpp in Sources */,
 				073E175F2052701F007B1BAF /* ExampleUtil.cpp in Sources */,
 				073E1757205261F7007B1BAF /* ExampleVertexIndice.cpp in Sources */,
 				07314E61206CDB250082D5B4 /* Example20.cpp in Sources */,

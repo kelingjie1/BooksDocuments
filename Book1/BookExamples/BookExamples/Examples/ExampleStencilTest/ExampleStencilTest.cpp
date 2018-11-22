@@ -98,28 +98,39 @@ void ExampleStencilTest::setup()
 void ExampleStencilTest::render()
 {
     Example::render();
-    glClearColor(1, 0, 0, 1);
+    glClearColor(0.5, 1.0, 0.5, 1);
     glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT|GL_STENCIL_BUFFER_BIT);
     glUseProgram(program);
     glEnableVertexAttribArray(0);
     glEnableVertexAttribArray(1);
     glUniform1i(texLocation, 0);
     
+    //开启模板测试
     glEnable(GL_STENCIL_TEST);
+    //开启深度测试
     glEnable(GL_DEPTH_TEST);
+    //设置模板操作（模板测试失败保持模板值，模板测试成功深度测试失败保留模板值，全部成功替换模板值）
     glStencilOp(GL_KEEP, GL_KEEP, GL_REPLACE);
-    
+    //设置模板测试总是成功，并设置模板值为1，比较掩码为0xFF
     glStencilFunc(GL_ALWAYS, 1, 0xFF);
+    //设置模板写入掩码为0xFF（原样写入）
     glStencilMask(0xFF);
+    //绘制立方体
     drawCube(1);
     
-    
+    //设置深度测试比较方式为：不等，比较值为1，比较掩码为0xFF
     glStencilFunc(GL_NOTEQUAL, 1, 0xFF);
+    //设置写入掩码为0x00（无法写入）
     glStencilMask(0x00);
-    glDisable(GL_DEPTH_TEST);
+    //切换颜色绘制程序
     glUseProgram(colorProgram);
+    //绘制一个1.1倍大的立方体
     drawCube(1.1);
+    //恢复模板写入掩码，否则后续glClear操作对模板缓冲区的操作会失效
     glStencilMask(0xFF);
+    //关闭深度测试
+    glDisable(GL_DEPTH_TEST);
+    //关闭模板测试
     glDisable(GL_STENCIL_TEST);
     
 }

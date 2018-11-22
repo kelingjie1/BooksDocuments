@@ -64,7 +64,7 @@ void ExampleEBO::setup()
 void ExampleEBO::render()
 {
     Example::render();
-    glClearColor(1, 0, 0, 1);
+    glClearColor(0.5, 1.0, 0.5, 1);
     glClear(GL_COLOR_BUFFER_BIT);
     glUseProgram(program);
     
