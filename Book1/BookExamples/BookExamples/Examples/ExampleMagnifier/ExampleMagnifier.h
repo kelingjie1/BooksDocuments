@@ -11,12 +11,13 @@
 #include "Example.h"
 #include "ExampleUtil.h"
 
-class ExampleScaleFragment : public Example
+class ExampleMagnifier : public Example
 {
 protected:
     GLuint texture;
     GLuint texLocation;
-    GLuint scaleLocation;
+    GLuint posLocation;
+    GLuint viewSizeLocation;
     vector<TexVertex> vertice;
 public:
     virtual void setup();

@@ -43,6 +43,7 @@
 		073E1759205261F7007B1BAF /* ExampleEBO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 073E1751205261F7007B1BAF /* ExampleEBO.cpp */; };
 		073E175F2052701F007B1BAF /* ExampleUtil.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 073E175D2052701F007B1BAF /* ExampleUtil.cpp */; };
 		073E176720527534007B1BAF /* shader in Resources */ = {isa = PBXBuildFile; fileRef = 073E176620527534007B1BAF /* shader */; };
+		07AEB84D21ABF18000BC3089 /* ExampleMagnifier.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07AEB84C21ABF18000BC3089 /* ExampleMagnifier.cpp */; };
 		07D90F38219BC1DF0089551E /* ExampleCullFace.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D90F36219BC1DF0089551E /* ExampleCullFace.cpp */; };
 		07D90F5C219BCEA40089551E /* ExampleStencilTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07D90F5A219BCEA40089551E /* ExampleStencilTest.cpp */; };
 /* End PBXBuildFile section */
@@ -114,6 +115,8 @@
 		073E175D2052701F007B1BAF /* ExampleUtil.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleUtil.cpp; sourceTree = "<group>"; };
 		073E175E2052701F007B1BAF /* ExampleUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ExampleUtil.h; sourceTree = "<group>"; };
 		073E176620527534007B1BAF /* shader */ = {isa = PBXFileReference; lastKnownFileType = folder; path = shader; sourceTree = "<group>"; };
+		07AEB84B21ABF18000BC3089 /* ExampleMagnifier.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleMagnifier.h; sourceTree = "<group>"; };
+		07AEB84C21ABF18000BC3089 /* ExampleMagnifier.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleMagnifier.cpp; sourceTree = "<group>"; };
 		07D90F36219BC1DF0089551E /* ExampleCullFace.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleCullFace.cpp; sourceTree = "<group>"; };
 		07D90F37219BC1DF0089551E /* ExampleCullFace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleCullFace.h; sourceTree = "<group>"; };
 		07D90F5A219BCEA40089551E /* ExampleStencilTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleStencilTest.cpp; sourceTree = "<group>"; };
@@ -354,6 +357,7 @@
 				07D90F59219BCEA40089551E /* ExampleStencilTest */,
 				07314E5E206CDB250082D5B4 /* ExampleScaleVertex */,
 				07314E55206CDB240082D5B4 /* ExampleScaleFragment */,
+				07AEB84A21ABF18000BC3089 /* ExampleMagnifier */,
 				07314E40206CDB230082D5B4 /* Example13 */,
 				07314E52206CDB240082D5B4 /* Example14 */,
 				07314E43206CDB230082D5B4 /* Example15 */,
@@ -445,6 +449,15 @@
 				073E176620527534007B1BAF /* shader */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		07AEB84A21ABF18000BC3089 /* ExampleMagnifier */ = {
+			isa = PBXGroup;
+			children = (
+				07AEB84B21ABF18000BC3089 /* ExampleMagnifier.h */,
+				07AEB84C21ABF18000BC3089 /* ExampleMagnifier.cpp */,
+			);
+			path = ExampleMagnifier;
 			sourceTree = "<group>";
 		};
 		07D90F35219BC1DF0089551E /* ExampleCullFace */ = {
@@ -555,6 +568,7 @@
 				073E1755205261F7007B1BAF /* ExampleTextureAnimation.cpp in Sources */,
 				07D90F38219BC1DF0089551E /* ExampleCullFace.cpp in Sources */,
 				073E1756205261F7007B1BAF /* ExampleVAO.cpp in Sources */,
+				07AEB84D21ABF18000BC3089 /* ExampleMagnifier.cpp in Sources */,
 				07314E69206CDB250082D5B4 /* ExampleScaleFragment.cpp in Sources */,
 				073E172520516B88007B1BAF /* main.m in Sources */,
 				073E1758205261F7007B1BAF /* ExampleVBO.cpp in Sources */,

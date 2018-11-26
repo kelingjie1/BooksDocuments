@@ -6,19 +6,22 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#include "ExampleBase3D.h"
+#include "ExampleMagnifier.h"
 
-void ExampleBase3D::setup()
+void ExampleMagnifier::setup()
 {
-    setupShader("ExampleBase3D.vs", "ExampleBase3D.fs");
+    setupShader("ExampleScaleFragment.vs", "ExampleMagnifier.fs");
     texLocation = glGetUniformLocation(program, "tex");
-    mvpLocation = glGetUniformLocation(program, "mvp");
+    posLocation = glGetUniformLocation(program, "pos");
+    viewSizeLocation = glGetUniformLocation(program, "viewSize");
+    glUseProgram(program);
+    glUniform2f(viewSizeLocation, viewWidth, viewHeight);
     GLuint width,height;
     ExampleIOSBridge::createTextureFromFile("64.jpg", width, height, texture);
     vertice = TexVertex::makeRect();
 }
 
-void ExampleBase3D::render()
+void ExampleMagnifier::render()
 {
     Example::render();
     glClearColor(0.5, 1.0, 0.5, 1);
@@ -28,19 +31,9 @@ void ExampleBase3D::render()
     glEnableVertexAttribArray(1);
     glUniform1i(texLocation, 0);
     
+    
     //构造模型坐标变换矩阵(根据时间进行旋转)
-    modelMatrix = ExampleUtil::Matrix4MakeYRotation(totalTime);
-    
-    //构造观察矩阵，相机位置（0，0，-10），目标位置（0，0，0），上方向向量（0，1，0）
-    viewMatrix = ExampleUtil::Matrix4MakeLookAt(0, 0, -10, 0, 0, 0, 0, 1, 0);
-    
-    //构造透视投影矩阵，传入视窗尺寸viewWidth，viewHeight，及投影角度PI/4，近裁面距离1，远裁面距离10000
-    projectionMatrix = ExampleUtil::Matrix4MakePerspective(viewWidth, viewHeight, 3.1415926/4, 1, 10000);
-    
-    //计算MVP矩阵
-    Matrix4f mvpMatrix = projectionMatrix*viewMatrix*modelMatrix;
-    //传入矩阵数据，列优先存储
-    glUniformMatrix4fv(mvpLocation, 1, false, mvpMatrix.data());
+    glUniform2f(posLocation,sin(totalTime/10)/2*0.2+0.5,cos(totalTime/10)/2*0.2+0.5);
     
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture);
