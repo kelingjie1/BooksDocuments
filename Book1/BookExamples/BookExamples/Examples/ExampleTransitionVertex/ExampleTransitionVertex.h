@@ -9,9 +9,18 @@
 #pragma once
 
 #include "Example.h"
-class Example13 : public Example
+#include "ExampleUtil.h"
+
+class ExampleTransitionVertex : public Example
 {
+protected:
+    GLuint texture;
+    GLuint texLocation;
+    GLuint mvpLocation;
+    vector<vector<TexVertex>> verticeList;
+    Matrix4f modelMatrix;
 public:
     virtual void setup();
     virtual void render();
 };
+

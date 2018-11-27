@@ -12,7 +12,7 @@
 		0729D6DB21941FDF00713F05 /* ExampleMemoryMapping.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0729D6D921941FDF00713F05 /* ExampleMemoryMapping.cpp */; };
 		0729D6DF219A75D600713F05 /* ExampleCube3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 0729D6DE219A75D600713F05 /* ExampleCube3D.cpp */; };
 		07314E61206CDB250082D5B4 /* Example20.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E3E206CDB230082D5B4 /* Example20.cpp */; };
-		07314E62206CDB250082D5B4 /* Example13.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E41206CDB230082D5B4 /* Example13.cpp */; };
+		07314E62206CDB250082D5B4 /* ExampleTransitionVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E41206CDB230082D5B4 /* ExampleTransitionVertex.cpp */; };
 		07314E63206CDB250082D5B4 /* Example15.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E44206CDB230082D5B4 /* Example15.cpp */; };
 		07314E64206CDB250082D5B4 /* ExampleDepthTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E47206CDB240082D5B4 /* ExampleDepthTest.cpp */; };
 		07314E65206CDB250082D5B4 /* Example18.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E4A206CDB240082D5B4 /* Example18.cpp */; };
@@ -58,8 +58,8 @@
 		0729D6DE219A75D600713F05 /* ExampleCube3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleCube3D.cpp; sourceTree = "<group>"; };
 		07314E3E206CDB230082D5B4 /* Example20.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example20.cpp; sourceTree = "<group>"; };
 		07314E3F206CDB230082D5B4 /* Example20.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example20.h; sourceTree = "<group>"; };
-		07314E41206CDB230082D5B4 /* Example13.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example13.cpp; sourceTree = "<group>"; };
-		07314E42206CDB230082D5B4 /* Example13.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example13.h; sourceTree = "<group>"; };
+		07314E41206CDB230082D5B4 /* ExampleTransitionVertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleTransitionVertex.cpp; sourceTree = "<group>"; };
+		07314E42206CDB230082D5B4 /* ExampleTransitionVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTransitionVertex.h; sourceTree = "<group>"; };
 		07314E44206CDB230082D5B4 /* Example15.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example15.cpp; sourceTree = "<group>"; };
 		07314E45206CDB230082D5B4 /* Example15.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example15.h; sourceTree = "<group>"; };
 		07314E47206CDB240082D5B4 /* ExampleDepthTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleDepthTest.cpp; sourceTree = "<group>"; };
@@ -170,13 +170,13 @@
 			path = Example20;
 			sourceTree = "<group>";
 		};
-		07314E40206CDB230082D5B4 /* Example13 */ = {
+		07314E40206CDB230082D5B4 /* ExampleTransitionVertex */ = {
 			isa = PBXGroup;
 			children = (
-				07314E42206CDB230082D5B4 /* Example13.h */,
-				07314E41206CDB230082D5B4 /* Example13.cpp */,
+				07314E42206CDB230082D5B4 /* ExampleTransitionVertex.h */,
+				07314E41206CDB230082D5B4 /* ExampleTransitionVertex.cpp */,
 			);
-			path = Example13;
+			path = ExampleTransitionVertex;
 			sourceTree = "<group>";
 		};
 		07314E43206CDB230082D5B4 /* Example15 */ = {
@@ -358,7 +358,7 @@
 				07314E5E206CDB250082D5B4 /* ExampleScaleVertex */,
 				07314E55206CDB240082D5B4 /* ExampleScaleFragment */,
 				07AEB84A21ABF18000BC3089 /* ExampleMagnifier */,
-				07314E40206CDB230082D5B4 /* Example13 */,
+				07314E40206CDB230082D5B4 /* ExampleTransitionVertex */,
 				07314E52206CDB240082D5B4 /* Example14 */,
 				07314E43206CDB230082D5B4 /* Example15 */,
 				07314E58206CDB250082D5B4 /* Example16 */,
@@ -557,7 +557,7 @@
 				0729D6DF219A75D600713F05 /* ExampleCube3D.cpp in Sources */,
 				07314E6A206CDB250082D5B4 /* Example16.cpp in Sources */,
 				07314E65206CDB250082D5B4 /* Example18.cpp in Sources */,
-				07314E62206CDB250082D5B4 /* Example13.cpp in Sources */,
+				07314E62206CDB250082D5B4 /* ExampleTransitionVertex.cpp in Sources */,
 				073E173720523389007B1BAF /* Example.cpp in Sources */,
 				070BCCCA207CEE410034A09C /* ExampleIOSBridge.mm in Sources */,
 				07314E67206CDB250082D5B4 /* Example19.cpp in Sources */,

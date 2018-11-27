@@ -32,7 +32,7 @@ void ExampleMagnifier::render()
     glUniform1i(texLocation, 0);
     
     
-    //构造模型坐标变换矩阵(根据时间进行旋转)
+    //设置放大镜中心点坐标
     glUniform2f(posLocation,sin(totalTime/10)/2*0.2+0.5,cos(totalTime/10)/2*0.2+0.5);
     
     glActiveTexture(GL_TEXTURE0);
