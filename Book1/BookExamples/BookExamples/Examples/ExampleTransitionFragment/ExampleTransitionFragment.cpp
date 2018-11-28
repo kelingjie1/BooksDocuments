@@ -6,20 +6,19 @@
 //  Copyright © 2018年 lingtonke. All rights reserved.
 //
 
-#include "ExampleScaleFragment.h"
+#include "ExampleTransitionFragment.h"
 
-void ExampleScaleFragment::setup()
+void ExampleTransitionFragment::setup()
 {
-    setupShader("ExampleBase3D.vs", "ExampleScaleFragment.fs");
+    setupShader("ExampleBase3D.vs", "ExampleTransitionFragment.fs");
     texLocation = glGetUniformLocation(program, "tex");
-    mvpLocation = glGetUniformLocation(program, "mvp");
-    scaleLocation = glGetUniformLocation(program, "scale");
+    timeLocation = glGetUniformLocation(program, "time");
     GLuint width,height;
     ExampleIOSBridge::createTextureFromFile("64.jpg", width, height, texture);
     vertice = TexVertex::makeRect();
 }
 
-void ExampleScaleFragment::render()
+void ExampleTransitionFragment::render()
 {
     Example::render();
     glClearColor(0.5, 1.0, 0.5, 1);
@@ -31,9 +30,7 @@ void ExampleScaleFragment::render()
     
     modelMatrix = Matrix4f::Identity();
     glUniformMatrix4fv(mvpLocation, 1, false, modelMatrix.data());
-    
-    //构造模型坐标变换矩阵(根据时间进行旋转)
-    glUniform1f(scaleLocation,sin(totalTime/10));
+    glUniform1f(timeLocation,totalTime);
     
     glActiveTexture(GL_TEXTURE0);
     glBindTexture(GL_TEXTURE_2D, texture);
@@ -44,3 +41,4 @@ void ExampleScaleFragment::render()
     //绘制三角形扇形，形成正方形
     glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
 }
+

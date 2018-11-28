@@ -18,7 +18,7 @@
 		07314E65206CDB250082D5B4 /* Example18.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E4A206CDB240082D5B4 /* Example18.cpp */; };
 		07314E66206CDB250082D5B4 /* ExampleBase3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E4D206CDB240082D5B4 /* ExampleBase3D.cpp */; };
 		07314E67206CDB250082D5B4 /* Example19.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E50206CDB240082D5B4 /* Example19.cpp */; };
-		07314E68206CDB250082D5B4 /* Example14.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E53206CDB240082D5B4 /* Example14.cpp */; };
+		07314E68206CDB250082D5B4 /* ExampleTransitionFragment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E53206CDB240082D5B4 /* ExampleTransitionFragment.cpp */; };
 		07314E69206CDB250082D5B4 /* ExampleScaleFragment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E56206CDB240082D5B4 /* ExampleScaleFragment.cpp */; };
 		07314E6A206CDB250082D5B4 /* Example16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E59206CDB250082D5B4 /* Example16.cpp */; };
 		07314E6B206CDB250082D5B4 /* Example17.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E5C206CDB250082D5B4 /* Example17.cpp */; };
@@ -70,8 +70,8 @@
 		07314E4E206CDB240082D5B4 /* ExampleBase3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleBase3D.h; sourceTree = "<group>"; };
 		07314E50206CDB240082D5B4 /* Example19.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example19.cpp; sourceTree = "<group>"; };
 		07314E51206CDB240082D5B4 /* Example19.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example19.h; sourceTree = "<group>"; };
-		07314E53206CDB240082D5B4 /* Example14.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example14.cpp; sourceTree = "<group>"; };
-		07314E54206CDB240082D5B4 /* Example14.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example14.h; sourceTree = "<group>"; };
+		07314E53206CDB240082D5B4 /* ExampleTransitionFragment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleTransitionFragment.cpp; sourceTree = "<group>"; };
+		07314E54206CDB240082D5B4 /* ExampleTransitionFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTransitionFragment.h; sourceTree = "<group>"; };
 		07314E56206CDB240082D5B4 /* ExampleScaleFragment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleScaleFragment.cpp; sourceTree = "<group>"; };
 		07314E57206CDB240082D5B4 /* ExampleScaleFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleScaleFragment.h; sourceTree = "<group>"; };
 		07314E59206CDB250082D5B4 /* Example16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example16.cpp; sourceTree = "<group>"; };
@@ -224,13 +224,13 @@
 			path = Example19;
 			sourceTree = "<group>";
 		};
-		07314E52206CDB240082D5B4 /* Example14 */ = {
+		07314E52206CDB240082D5B4 /* ExampleTransitionFragment */ = {
 			isa = PBXGroup;
 			children = (
-				07314E54206CDB240082D5B4 /* Example14.h */,
-				07314E53206CDB240082D5B4 /* Example14.cpp */,
+				07314E54206CDB240082D5B4 /* ExampleTransitionFragment.h */,
+				07314E53206CDB240082D5B4 /* ExampleTransitionFragment.cpp */,
 			);
-			path = Example14;
+			path = ExampleTransitionFragment;
 			sourceTree = "<group>";
 		};
 		07314E55206CDB240082D5B4 /* ExampleScaleFragment */ = {
@@ -359,7 +359,7 @@
 				07314E55206CDB240082D5B4 /* ExampleScaleFragment */,
 				07AEB84A21ABF18000BC3089 /* ExampleMagnifier */,
 				07314E40206CDB230082D5B4 /* ExampleTransitionVertex */,
-				07314E52206CDB240082D5B4 /* Example14 */,
+				07314E52206CDB240082D5B4 /* ExampleTransitionFragment */,
 				07314E43206CDB230082D5B4 /* Example15 */,
 				07314E58206CDB250082D5B4 /* Example16 */,
 				07314E5B206CDB250082D5B4 /* Example17 */,
@@ -582,7 +582,7 @@
 				073E172E20516C70007B1BAF /* ExampleClearBuffer.cpp in Sources */,
 				073E171720516B88007B1BAF /* AppDelegate.m in Sources */,
 				073E173220516D1D007B1BAF /* ExampleViewController.mm in Sources */,
-				07314E68206CDB250082D5B4 /* Example14.cpp in Sources */,
+				07314E68206CDB250082D5B4 /* ExampleTransitionFragment.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

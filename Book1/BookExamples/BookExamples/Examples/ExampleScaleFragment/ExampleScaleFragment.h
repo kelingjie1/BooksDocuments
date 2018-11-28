@@ -17,7 +17,9 @@ protected:
     GLuint texture;
     GLuint texLocation;
     GLuint scaleLocation;
+    GLuint mvpLocation;
     vector<TexVertex> vertice;
+    Matrix4f modelMatrix;
 public:
     virtual void setup();
     virtual void render();

@@ -27,7 +27,7 @@
 #import "ExampleScaleFragment.h"
 #import "ExampleMagnifier.h"
 #import "ExampleTransitionVertex.h"
-#import "Example19.h"
+#import "ExampleTransitionFragment.h"
 #import "Example20.h"
 
 DemoData *Demo(NSString *title,Example *example)
@@ -85,6 +85,7 @@ DemoData *Demo(NSString *title,Example *example)
                        Demo(@"Example -- 放大和缩小（片段实现）", new ExampleScaleFragment()),
                        Demo(@"Example -- 放大镜", new ExampleMagnifier()),
                        Demo(@"Example -- 错位平移（顶点实现）", new ExampleTransitionVertex()),
+                       Demo(@"Example -- 错位平移（片段实现）", new ExampleTransitionFragment()),
                        ];
 }
 
