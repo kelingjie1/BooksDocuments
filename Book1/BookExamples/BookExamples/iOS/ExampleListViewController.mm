@@ -28,7 +28,7 @@
 #import "ExampleMagnifier.h"
 #import "ExampleTransitionVertex.h"
 #import "ExampleTransitionFragment.h"
-#import "Example20.h"
+#import "ExampleRotation.h"
 
 DemoData *Demo(NSString *title,Example *example)
 {
@@ -86,6 +86,7 @@ DemoData *Demo(NSString *title,Example *example)
                        Demo(@"Example -- 放大镜", new ExampleMagnifier()),
                        Demo(@"Example -- 错位平移（顶点实现）", new ExampleTransitionVertex()),
                        Demo(@"Example -- 错位平移（片段实现）", new ExampleTransitionFragment()),
+                       Demo(@"Example -- 旋涡效果", new ExampleRotation()),
                        ];
 }
 

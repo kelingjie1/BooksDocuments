@@ -77,7 +77,7 @@ void ExampleTransitionVertex::render()
         {
             time = duration-time;
         }
-        //构造模型坐标变换矩阵(根据时间进行旋转)
+        //构造模型坐标变换矩阵(根据时间进行计算平移效果)
         if (i%2)
         {
             modelMatrix = ExampleUtil::Matrix4MakeTransition(Vector3f(time/4,0,0));
