@@ -106,7 +106,6 @@ void Example::render()
     }
     lastTime = newTime;
     totalTime += timeDelta;
-    cout<<totalTime<<endl;
 }
 
 void Example::release()
