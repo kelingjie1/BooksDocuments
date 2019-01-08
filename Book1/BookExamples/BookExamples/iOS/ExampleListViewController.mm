@@ -29,6 +29,9 @@
 #import "ExampleTransitionVertex.h"
 #import "ExampleTransitionFragment.h"
 #import "ExampleRotation.h"
+#import "ExampleInvertColor.h"
+#import "ExampleGrayColor.h"
+#import "ExampleColorChannel.h"
 
 DemoData *Demo(NSString *title,Example *example)
 {
@@ -87,6 +90,9 @@ DemoData *Demo(NSString *title,Example *example)
                        Demo(@"Example -- 错位平移（顶点实现）", new ExampleTransitionVertex()),
                        Demo(@"Example -- 错位平移（片段实现）", new ExampleTransitionFragment()),
                        Demo(@"Example -- 旋涡效果", new ExampleRotation()),
+                       Demo(@"Example -- 反色效果", new ExampleInvertColor()),
+                       Demo(@"Example -- 灰度效果", new ExampleGrayColor()),
+                       Demo(@"Example -- 色彩分离", new ExampleColorChannel()),
                        ];
 }
 

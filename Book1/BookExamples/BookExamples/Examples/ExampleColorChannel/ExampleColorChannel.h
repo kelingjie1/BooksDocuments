@@ -9,10 +9,18 @@
 #pragma once
 
 #include "Example.h"
-class Example18 : public Example
+#include "ExampleUtil.h"
+
+class ExampleColorChannel : public Example
 {
+protected:
+    GLuint texture;
+    GLuint texLocation;
+    GLuint timeLocation;
+    GLuint mvpLocation;
+    vector<TexVertex> vertice;
+    Matrix4f modelMatrix;
 public:
     virtual void setup();
     virtual void render();
 };
-

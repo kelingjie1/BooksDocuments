@@ -15,13 +15,13 @@
 		07314E62206CDB250082D5B4 /* ExampleTransitionVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E41206CDB230082D5B4 /* ExampleTransitionVertex.cpp */; };
 		07314E63206CDB250082D5B4 /* ExampleRotation.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E44206CDB230082D5B4 /* ExampleRotation.cpp */; };
 		07314E64206CDB250082D5B4 /* ExampleDepthTest.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E47206CDB240082D5B4 /* ExampleDepthTest.cpp */; };
-		07314E65206CDB250082D5B4 /* Example18.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E4A206CDB240082D5B4 /* Example18.cpp */; };
+		07314E65206CDB250082D5B4 /* ExampleColorChannel.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E4A206CDB240082D5B4 /* ExampleColorChannel.cpp */; };
 		07314E66206CDB250082D5B4 /* ExampleBase3D.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E4D206CDB240082D5B4 /* ExampleBase3D.cpp */; };
 		07314E67206CDB250082D5B4 /* Example19.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E50206CDB240082D5B4 /* Example19.cpp */; };
 		07314E68206CDB250082D5B4 /* ExampleTransitionFragment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E53206CDB240082D5B4 /* ExampleTransitionFragment.cpp */; };
 		07314E69206CDB250082D5B4 /* ExampleScaleFragment.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E56206CDB240082D5B4 /* ExampleScaleFragment.cpp */; };
-		07314E6A206CDB250082D5B4 /* Example16.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E59206CDB250082D5B4 /* Example16.cpp */; };
-		07314E6B206CDB250082D5B4 /* Example17.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E5C206CDB250082D5B4 /* Example17.cpp */; };
+		07314E6A206CDB250082D5B4 /* ExampleInvertColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E59206CDB250082D5B4 /* ExampleInvertColor.cpp */; };
+		07314E6B206CDB250082D5B4 /* ExampleGrayColor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E5C206CDB250082D5B4 /* ExampleGrayColor.cpp */; };
 		07314E6C206CDB250082D5B4 /* ExampleScaleVertex.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 07314E5F206CDB250082D5B4 /* ExampleScaleVertex.cpp */; };
 		073E171720516B88007B1BAF /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E171620516B88007B1BAF /* AppDelegate.m */; };
 		073E171A20516B88007B1BAF /* ExampleListViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 073E171920516B88007B1BAF /* ExampleListViewController.mm */; };
@@ -64,8 +64,8 @@
 		07314E45206CDB230082D5B4 /* ExampleRotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleRotation.h; sourceTree = "<group>"; };
 		07314E47206CDB240082D5B4 /* ExampleDepthTest.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleDepthTest.cpp; sourceTree = "<group>"; };
 		07314E48206CDB240082D5B4 /* ExampleDepthTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleDepthTest.h; sourceTree = "<group>"; };
-		07314E4A206CDB240082D5B4 /* Example18.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example18.cpp; sourceTree = "<group>"; };
-		07314E4B206CDB240082D5B4 /* Example18.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example18.h; sourceTree = "<group>"; };
+		07314E4A206CDB240082D5B4 /* ExampleColorChannel.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleColorChannel.cpp; sourceTree = "<group>"; };
+		07314E4B206CDB240082D5B4 /* ExampleColorChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleColorChannel.h; sourceTree = "<group>"; };
 		07314E4D206CDB240082D5B4 /* ExampleBase3D.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleBase3D.cpp; sourceTree = "<group>"; };
 		07314E4E206CDB240082D5B4 /* ExampleBase3D.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleBase3D.h; sourceTree = "<group>"; };
 		07314E50206CDB240082D5B4 /* Example19.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example19.cpp; sourceTree = "<group>"; };
@@ -74,10 +74,10 @@
 		07314E54206CDB240082D5B4 /* ExampleTransitionFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleTransitionFragment.h; sourceTree = "<group>"; };
 		07314E56206CDB240082D5B4 /* ExampleScaleFragment.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleScaleFragment.cpp; sourceTree = "<group>"; };
 		07314E57206CDB240082D5B4 /* ExampleScaleFragment.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleScaleFragment.h; sourceTree = "<group>"; };
-		07314E59206CDB250082D5B4 /* Example16.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example16.cpp; sourceTree = "<group>"; };
-		07314E5A206CDB250082D5B4 /* Example16.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example16.h; sourceTree = "<group>"; };
-		07314E5C206CDB250082D5B4 /* Example17.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Example17.cpp; sourceTree = "<group>"; };
-		07314E5D206CDB250082D5B4 /* Example17.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Example17.h; sourceTree = "<group>"; };
+		07314E59206CDB250082D5B4 /* ExampleInvertColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleInvertColor.cpp; sourceTree = "<group>"; };
+		07314E5A206CDB250082D5B4 /* ExampleInvertColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleInvertColor.h; sourceTree = "<group>"; };
+		07314E5C206CDB250082D5B4 /* ExampleGrayColor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleGrayColor.cpp; sourceTree = "<group>"; };
+		07314E5D206CDB250082D5B4 /* ExampleGrayColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleGrayColor.h; sourceTree = "<group>"; };
 		07314E5F206CDB250082D5B4 /* ExampleScaleVertex.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ExampleScaleVertex.cpp; sourceTree = "<group>"; };
 		07314E60206CDB250082D5B4 /* ExampleScaleVertex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExampleScaleVertex.h; sourceTree = "<group>"; };
 		073E171220516B88007B1BAF /* BookExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BookExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -197,13 +197,13 @@
 			path = ExampleDepthTest;
 			sourceTree = "<group>";
 		};
-		07314E49206CDB240082D5B4 /* Example18 */ = {
+		07314E49206CDB240082D5B4 /* ExampleColorChannel */ = {
 			isa = PBXGroup;
 			children = (
-				07314E4B206CDB240082D5B4 /* Example18.h */,
-				07314E4A206CDB240082D5B4 /* Example18.cpp */,
+				07314E4B206CDB240082D5B4 /* ExampleColorChannel.h */,
+				07314E4A206CDB240082D5B4 /* ExampleColorChannel.cpp */,
 			);
-			path = Example18;
+			path = ExampleColorChannel;
 			sourceTree = "<group>";
 		};
 		07314E4C206CDB240082D5B4 /* ExampleBase3D */ = {
@@ -242,22 +242,22 @@
 			path = ExampleScaleFragment;
 			sourceTree = "<group>";
 		};
-		07314E58206CDB250082D5B4 /* Example16 */ = {
+		07314E58206CDB250082D5B4 /* ExampleInvertColor */ = {
 			isa = PBXGroup;
 			children = (
-				07314E5A206CDB250082D5B4 /* Example16.h */,
-				07314E59206CDB250082D5B4 /* Example16.cpp */,
+				07314E5A206CDB250082D5B4 /* ExampleInvertColor.h */,
+				07314E59206CDB250082D5B4 /* ExampleInvertColor.cpp */,
 			);
-			path = Example16;
+			path = ExampleInvertColor;
 			sourceTree = "<group>";
 		};
-		07314E5B206CDB250082D5B4 /* Example17 */ = {
+		07314E5B206CDB250082D5B4 /* ExampleGrayColor */ = {
 			isa = PBXGroup;
 			children = (
-				07314E5D206CDB250082D5B4 /* Example17.h */,
-				07314E5C206CDB250082D5B4 /* Example17.cpp */,
+				07314E5D206CDB250082D5B4 /* ExampleGrayColor.h */,
+				07314E5C206CDB250082D5B4 /* ExampleGrayColor.cpp */,
 			);
-			path = Example17;
+			path = ExampleGrayColor;
 			sourceTree = "<group>";
 		};
 		07314E5E206CDB250082D5B4 /* ExampleScaleVertex */ = {
@@ -361,9 +361,9 @@
 				07314E40206CDB230082D5B4 /* ExampleTransitionVertex */,
 				07314E52206CDB240082D5B4 /* ExampleTransitionFragment */,
 				07314E43206CDB230082D5B4 /* ExampleRotation */,
-				07314E58206CDB250082D5B4 /* Example16 */,
-				07314E5B206CDB250082D5B4 /* Example17 */,
-				07314E49206CDB240082D5B4 /* Example18 */,
+				07314E58206CDB250082D5B4 /* ExampleInvertColor */,
+				07314E5B206CDB250082D5B4 /* ExampleGrayColor */,
+				07314E49206CDB240082D5B4 /* ExampleColorChannel */,
 				07314E4F206CDB240082D5B4 /* Example19 */,
 				07314E3D206CDB230082D5B4 /* Example20 */,
 			);
@@ -555,8 +555,8 @@
 				07D90F5C219BCEA40089551E /* ExampleStencilTest.cpp in Sources */,
 				0729D6DB21941FDF00713F05 /* ExampleMemoryMapping.cpp in Sources */,
 				0729D6DF219A75D600713F05 /* ExampleCube3D.cpp in Sources */,
-				07314E6A206CDB250082D5B4 /* Example16.cpp in Sources */,
-				07314E65206CDB250082D5B4 /* Example18.cpp in Sources */,
+				07314E6A206CDB250082D5B4 /* ExampleInvertColor.cpp in Sources */,
+				07314E65206CDB250082D5B4 /* ExampleColorChannel.cpp in Sources */,
 				07314E62206CDB250082D5B4 /* ExampleTransitionVertex.cpp in Sources */,
 				073E173720523389007B1BAF /* Example.cpp in Sources */,
 				070BCCCA207CEE410034A09C /* ExampleIOSBridge.mm in Sources */,
@@ -578,7 +578,7 @@
 				07314E61206CDB250082D5B4 /* Example20.cpp in Sources */,
 				07314E64206CDB250082D5B4 /* ExampleDepthTest.cpp in Sources */,
 				073E1759205261F7007B1BAF /* ExampleEBO.cpp in Sources */,
-				07314E6B206CDB250082D5B4 /* Example17.cpp in Sources */,
+				07314E6B206CDB250082D5B4 /* ExampleGrayColor.cpp in Sources */,
 				073E172E20516C70007B1BAF /* ExampleClearBuffer.cpp in Sources */,
 				073E171720516B88007B1BAF /* AppDelegate.m in Sources */,
 				073E173220516D1D007B1BAF /* ExampleViewController.mm in Sources */,
