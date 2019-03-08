@@ -15,7 +15,7 @@ void ExampleColorChannel::setup()
     texLocation = glGetUniformLocation(program, "tex");
     timeLocation = glGetUniformLocation(program, "time");
     GLuint width,height;
-    ExampleIOSBridge::createTextureFromFile("64.jpg", width, height, texture);
+    ExampleBridge::createTextureFromFile("64.jpg", width, height, texture);
     vertice = TexVertex::makeRect();
 }
 
