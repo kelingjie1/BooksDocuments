@@ -9,13 +9,14 @@
 #include "ExampleIOSBridge.h"
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import "ExampleUtil.h"
 
 void ExampleIOSBridge::createTextureFromFile(string file,GLuint &width,GLuint &height,GLuint &texture)
 {
     
     NSString *fileName = [NSString stringWithUTF8String:file.c_str()];
-    NSString *bundlePath = [NSBundle mainBundle].resourcePath;
-    NSString *path = [bundlePath stringByAppendingPathComponent:[NSString stringWithFormat:@"image/%@",fileName]];
+    NSString *respath = [NSString stringWithUTF8String:ExampleUtil::instance->resourcesDir.c_str()];
+    NSString *path = [respath stringByAppendingPathComponent:[NSString stringWithFormat:@"image/%@",fileName]];
     UIImage *image = [UIImage imageWithContentsOfFile:path];
     width = (GLsizei)CGImageGetWidth(image.CGImage);
     height = (GLsizei)CGImageGetHeight(image.CGImage);

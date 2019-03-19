@@ -70,7 +70,7 @@ DemoData *Demo(NSString *title,Example *example)
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    ExampleUtil::instance->resourcesDir = [[[NSBundle mainBundle] resourcePath] cStringUsingEncoding:NSUTF8StringEncoding];
+    ExampleUtil::instance->resourcesDir = [[[[NSBundle mainBundle] resourcePath] stringByAppendingPathComponent:@"Resource"] cStringUsingEncoding:NSUTF8StringEncoding];
     self.demoDatas = @[Demo(@"Example -- 清空缓冲区", new ExampleClearBuffer()),
                        Demo(@"Example -- 绘制图像", new ExampleBaseShader()),
                        Demo(@"Example -- 使用顶点索引", new ExampleVertexIndice()),

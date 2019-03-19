@@ -8,7 +8,7 @@
 #pragma once
 
 #include "Platform.h"
-#include "Eigen/Eigen"
+#include <Eigen/Eigen>
 #include <string>
 #include <iostream>
 #include <fstream>
