@@ -4,8 +4,8 @@
         <file alias="star.png">Resource/image/star.png</file>
         <file>Resource/shader/Example2.fs</file>
         <file>Resource/shader/Example2.vs</file>
-        <file>Resource/shader/Example7.fs</file>
-        <file>Resource/shader/Example7.vs</file>
+        <file>Resource/shader/ExampleTexture.fs</file>
+        <file>Resource/shader/ExampleTexture.vs</file>
         <file>Resource/shader/ExampleTextureAnimation.fs</file>
         <file>Resource/shader/ExampleTextureAnimation.vs</file>
         <file>Resource/shader/ExampleBase3D.fs</file>
@@ -21,5 +21,6 @@
         <file>Resource/shader/ExampleStencilTest.fs</file>
         <file>Resource/shader/ExampleStencilTest.vs</file>
         <file>Resource/shader/ExampleTransitionFragment.fs</file>
+        <file alias="lut.png">Resource/image/lut.png</file>
     </qresource>
 </RCC>

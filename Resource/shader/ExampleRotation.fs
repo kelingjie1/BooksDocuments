@@ -8,7 +8,7 @@ void main()
 {
     vec2 uv = vec2(v_texCoord.x-0.5,v_texCoord.y-0.5);
     float dis = distance(v_texCoord,vec2(0.5,0.5));
-    float r = time/dis/100.0;
+    float r = time/dis/50.0;
     //坐标旋转公式
     //x = x * cos(r) – y * sin(r)
     //y = x * sin(r) + y * cos(r)

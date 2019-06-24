@@ -17,7 +17,8 @@ public:
     vector<GLfloat> vertice;
     vector<GLfloat> texCoords;
     virtual void setup() {
-        program = ExampleUtil::instance()->createProgram("Example7.vs", "Example7.fs");
+        Example::setup();
+        program = ExampleUtil::instance()->createProgram("ExampleTexture.vs", "ExampleTexture.fs");
         texLocation = glGetUniformLocation(program, "tex");
         texture = ExampleUtil::instance()->createTexture(QImage(":/64.jpg"));
         vertice.resize(12);

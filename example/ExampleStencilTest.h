@@ -68,6 +68,7 @@ public:
         glDrawArrays(GL_TRIANGLE_FAN, 0, 4);
     }
     virtual void setup() {
+        Example::setup();
         program = ExampleUtil::instance()->createProgram("ExampleStencilTest.vs", "ExampleStencilTest.fs");
         colorProgram = program;
         program = ExampleUtil::instance()->createProgram("ExampleCube3D.vs", "ExampleCube3D.fs");

@@ -24,12 +24,13 @@ protected:
     mat4 modelMatrix;
 public:
     virtual void setup() {
+        Example::setup();
         program = ExampleUtil::instance()->createProgram("ExampleBase3D.vs", "ExampleLUT.fs");
         texLocation = glGetUniformLocation(program, "tex");
         lutLocation = glGetUniformLocation(program, "lut");
         timeLocation = glGetUniformLocation(program, "time");
         texture = ExampleUtil::instance()->createTexture(QImage(":/64.jpg"));
-        lut = ExampleUtil::instance()->createTexture(QImage("lut.jpg"));
+        lut = ExampleUtil::instance()->createTexture(QImage(":/lut.jpg"));
         vertice = TexVertex::makeRect();
     }
     virtual void render() {

@@ -21,7 +21,8 @@ protected:
     vector<TexVertex> vertice;
 public:
     virtual void setup() {
-        program = ExampleUtil::instance()->createProgram("ExampleScaleFragment.vs", "ExampleMagnifier.fs");
+        Example::setup();
+        program = ExampleUtil::instance()->createProgram("ExampleTexture.vs", "ExampleMagnifier.fs");
         texLocation = glGetUniformLocation(program, "tex");
         posLocation = glGetUniformLocation(program, "pos");
         viewSizeLocation = glGetUniformLocation(program, "viewSize");
@@ -41,7 +42,7 @@ public:
 
 
         //设置放大镜中心点坐标
-        glUniform2f(posLocation,sin(totalTime/10)/2*0.2+0.5,cos(totalTime/10)/2*0.2+0.5);
+        glUniform2f(posLocation,sin(totalTime/5)/2*0.2+0.5,cos(totalTime/5)/2*0.2+0.5);
 
         glActiveTexture(GL_TEXTURE0);
         glBindTexture(GL_TEXTURE_2D, texture);

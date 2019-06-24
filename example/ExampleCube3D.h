@@ -18,15 +18,16 @@ protected:
     GLuint texLocation;
     GLuint vpLocation;
     GLuint mLocation;
-    
+
     vector<TexVertex> vertice;
     vector<GLushort> indice;
-    
+
     mat4 modelMatrix;
     mat4 viewMatrix;
     mat4 projectionMatrix;
 public:
     virtual void setup() {
+        Example::setup();
         program = ExampleUtil::instance()->createProgram("ExampleCube3D.vs", "ExampleCube3D.fs");
         texLocation = glGetUniformLocation(program, "tex");
         vpLocation = glGetUniformLocation(program, "vp");

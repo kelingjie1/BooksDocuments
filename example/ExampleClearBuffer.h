@@ -12,8 +12,8 @@
 class ExampleClearBuffer : public Example
 {
 public:
-    virtual void setup() {}
     virtual void render() {
+        Example::render();
         //设置清除颜色(RGBA)
         glClearColor(0.0, 0.5, 0.5, 1);
         //清除颜色缓冲区

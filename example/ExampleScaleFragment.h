@@ -22,11 +22,13 @@ protected:
     mat4 modelMatrix;
 public:
     virtual void setup() {
+        Example::setup();
         program = ExampleUtil::instance()->createProgram("ExampleBase3D.vs", "ExampleScaleFragment.fs");
         texLocation = glGetUniformLocation(program, "tex");
         mvpLocation = glGetUniformLocation(program, "mvp");
         scaleLocation = glGetUniformLocation(program, "scale");
         texture = ExampleUtil::instance()->createTexture(QImage(":/64.jpg"));
+        vertice = TexVertex::makeRect();
     }
     virtual void render() {
         Example::render();

@@ -22,6 +22,7 @@ protected:
     mat4 modelMatrix;
 public:
     virtual void setup() {
+        Example::setup();
         program = ExampleUtil::instance()->createProgram("ExampleBase3D.vs", "ExampleInvertColor.fs");
         texLocation = glGetUniformLocation(program, "tex");
         timeLocation = glGetUniformLocation(program, "time");

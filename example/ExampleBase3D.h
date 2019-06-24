@@ -25,6 +25,7 @@ protected:
     mat4 projectionMatrix;
 public:
     virtual void setup() {
+        Example::setup();
         program = ExampleUtil::instance()->createProgram("ExampleBase3D.vs", "ExampleBase3D.fs");
         texLocation = glGetUniformLocation(program, "tex");
         mvpLocation = glGetUniformLocation(program, "mvp");
