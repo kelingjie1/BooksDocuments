@@ -22,5 +22,7 @@
         <file>Resource/shader/ExampleStencilTest.vs</file>
         <file>Resource/shader/ExampleTransitionFragment.fs</file>
         <file alias="lut.png">Resource/image/lut.png</file>
+        <file>Resource/shader/ExampleLUT.fs</file>
+        <file alias="lutbase.png">Resource/image/lutbase.png</file>
     </qresource>
 </RCC>
