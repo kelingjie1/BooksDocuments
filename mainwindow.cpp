@@ -26,6 +26,7 @@
 #include "example/ExampleGrayColor.h"
 #include "example/ExampleColorChannel.h"
 #include "example/ExampleLUT.h"
+#include "example/ExampleLight.h";
 
 
 using namespace std;
@@ -61,6 +62,7 @@ MainWindow::MainWindow(QWidget *parent) :
     A("灰度效果",ExampleGrayColor);
     A("色彩分离",ExampleColorChannel);
     A("颜色查找表",ExampleLUT);
+    A("基础光照",ExampleLight);
 #undef A
     for (int i=0;i<examples.size();i++) {
         ui->listWidget->addItem(examples[i].first);
@@ -85,6 +87,7 @@ void MainWindow::on_listWidget_itemSelectionChanged()
     ui->openGLWidget = view;
     ui->centralWidget->layout()->addWidget(view);
     view->initializeFunc = [=](){
+        cout<<glGetString(GL_VERSION)<<endl;
         this->current = examples[ui->listWidget->currentRow()].second();
         this->current->viewWidth = view->width();
         this->current->viewHeight = view->height();
@@ -96,6 +99,7 @@ void MainWindow::on_listWidget_itemSelectionChanged()
     };
     view->drawFunc = [=]() {
         this->current->render();
+        //view->context()->swapBuffers(view->context()->surface());
     };
 
 }

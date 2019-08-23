@@ -19,8 +19,11 @@
 #include <glm/ext/scalar_constants.hpp>
 #include <glm/gtc/type_ptr.hpp>
 #include <chrono>
+#include <ObjectiveGL/ObjectiveGL.h>
+
 using namespace std;
 using namespace glm;
+using namespace ObjectiveGL;
 
 #define PI 3.1415926f
 
@@ -31,9 +34,18 @@ public:
         static ExampleUtil x;
         return &x;
     }
+    static bool isOpenGLES;
     ExampleUtil():QOpenGLExtraFunctions(QOpenGLContext::currentContext()) {
 
     }
+
+    shared_ptr<GLTexture> createGLTexture(QImage image) {
+        image = image.convertToFormat(QImage::Format_RGBA8888);
+        auto texture = GLTexture::create();
+        texture->setImageData(image.bits(),image.width(),image.height());
+        return texture;
+    }
+
     GLuint createTexture(QImage image) {
         image = image.convertToFormat(QImage::Format_RGBA8888);
         GLuint texture;
@@ -45,17 +57,32 @@ public:
         glBindTexture(GL_TEXTURE_2D, 0);
         return texture;
     }
+    QString getShaderStr(QString name) {
+        QFile vsFile(":/Resource/shader/"+name);
+        vsFile.open(QIODevice::ReadOnly|QIODevice::Text);
+        auto vsQStr = vsFile.readAll();
+        if (isOpenGLES) {
+            vsQStr.insert(0,"#version 300 es\n");
+        }
+        else {
+            vsQStr.insert(0,"#version 330\n");
+        }
+       return vsQStr;
+    }
+
+    shared_ptr<GLProgram> createGLProgram(QString vs,QString fs) {
+        auto vsStr = getShaderStr(vs).toStdString();
+        auto fsStr = getShaderStr(fs).toStdString();
+        auto program = GLProgram::create();
+        program->setRenderShader(vsStr,fsStr);
+        return program;
+    }
+
     GLuint createProgram(QString vs,QString fs) {
         GLint success;
         GLchar infoLog[512];
-
-        QFile vsFile(":/Resource/shader/"+vs);
-        vsFile.open(QIODevice::ReadOnly|QIODevice::Text);
-        auto vsStr = vsFile.readAll().toStdString();
-
-        QFile fsFile(":/Resource/shader/"+fs);
-        fsFile.open(QIODevice::ReadOnly|QIODevice::Text);
-        auto fsStr = fsFile.readAll().toStdString();
+        auto vsStr = getShaderStr(vs).toStdString();
+        auto fsStr = getShaderStr(fs).toStdString();
 
 
         //创建顶点着色器对象

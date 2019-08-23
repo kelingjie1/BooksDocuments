@@ -1,5 +1,3 @@
-//声明shader的版本
-#version 300 es
 //定义shader中的变量
 layout(location = 0) in vec2 position;
 void main()

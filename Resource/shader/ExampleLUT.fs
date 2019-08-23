@@ -1,4 +1,3 @@
-#version 300 es
 precision highp float;
 in vec2 v_texCoord;
 uniform sampler2D tex;
@@ -8,7 +7,7 @@ out vec4 fragColor;
 
 void main()
 {
-    vec4 textureColor = texture2D(tex, v_texCoord);
+    vec4 textureColor = texture(tex, v_texCoord);
      
     float blueColor = textureColor.b * 63.0;
      
@@ -28,8 +27,8 @@ void main()
     texPos2.x = (quad2.x * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * textureColor.r);
     texPos2.y = (quad2.y * 0.125) + 0.5/512.0 + ((0.125 - 1.0/512.0) * textureColor.g);
      
-    vec4 newColor1 = texture2D(lut, texPos1);
-    vec4 newColor2 = texture2D(lut, texPos2);
+    vec4 newColor1 = texture(lut, texPos1);
+    vec4 newColor2 = texture(lut, texPos2);
      
     vec4 newColor = mix(newColor1, newColor2, fract(blueColor));
     fragColor = mix(textureColor, vec4(newColor.rgb, textureColor.w), intensity);

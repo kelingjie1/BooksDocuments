@@ -24,5 +24,7 @@
         <file alias="lut.png">Resource/image/lut.png</file>
         <file>Resource/shader/ExampleLUT.fs</file>
         <file alias="lutbase.png">Resource/image/lutbase.png</file>
+        <file>Resource/shader/ExampleLight.fs</file>
+        <file>Resource/shader/ExampleLight.vs</file>
     </qresource>
 </RCC>

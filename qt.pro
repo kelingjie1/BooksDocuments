@@ -30,7 +30,8 @@ win32-msvc*: {
 }
 
 INCLUDEPATH += \
-        Library/glm
+        Library/glm \
+        Library/
 
 SOURCES += \
         main.cpp \
@@ -49,6 +50,7 @@ HEADERS += \
         example/ExampleGrayColor.h \
         example/ExampleInvertColor.h \
         example/ExampleLUT.h \
+        example/ExampleLight.h \
         example/ExampleMagnifier.h \
         example/ExampleMemoryMapping.h \
         example/ExampleRotation.h \
