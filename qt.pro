@@ -31,7 +31,7 @@ win32-msvc*: {
 
 INCLUDEPATH += \
         Library/glm \
-        Library/
+        Library/ObjectiveGL/include
 
 SOURCES += \
         main.cpp \
