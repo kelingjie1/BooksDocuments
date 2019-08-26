@@ -2,8 +2,6 @@
     <qresource prefix="/">
         <file alias="64.jpg">Resource/image/64.jpg</file>
         <file alias="star.png">Resource/image/star.png</file>
-        <file>Resource/shader/Example2.fs</file>
-        <file>Resource/shader/Example2.vs</file>
         <file>Resource/shader/ExampleTexture.fs</file>
         <file>Resource/shader/ExampleTexture.vs</file>
         <file>Resource/shader/ExampleTextureAnimation.fs</file>
@@ -24,7 +22,9 @@
         <file alias="lut.png">Resource/image/lut.png</file>
         <file>Resource/shader/ExampleLUT.fs</file>
         <file alias="lutbase.png">Resource/image/lutbase.png</file>
-        <file>Resource/shader/ExampleLight.fs</file>
-        <file>Resource/shader/ExampleLight.vs</file>
+        <file>Resource/shader/ExampleBaseShader.fs</file>
+        <file>Resource/shader/ExampleBaseShader.vs</file>
+        <file>Resource/shader/ExampleDiffuseLight.fs</file>
+        <file>Resource/shader/ExampleDiffuseLight.vs</file>
     </qresource>
 </RCC>

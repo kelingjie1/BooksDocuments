@@ -46,11 +46,11 @@ HEADERS += \
         example/ExampleCube3D.h \
         example/ExampleCullFace.h \
         example/ExampleDepthTest.h \
+        example/ExampleDiffuseLight.h \
         example/ExampleEBO.h \
         example/ExampleGrayColor.h \
         example/ExampleInvertColor.h \
         example/ExampleLUT.h \
-        example/ExampleLight.h \
         example/ExampleMagnifier.h \
         example/ExampleMemoryMapping.h \
         example/ExampleRotation.h \

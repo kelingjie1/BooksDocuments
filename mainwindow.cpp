@@ -26,7 +26,7 @@
 #include "example/ExampleGrayColor.h"
 #include "example/ExampleColorChannel.h"
 #include "example/ExampleLUT.h"
-#include "example/ExampleLight.h";
+#include "example/ExampleDiffuseLight.h";
 
 
 using namespace std;
@@ -67,6 +67,8 @@ MainWindow::MainWindow(QWidget *parent) :
     for (int i=0;i<examples.size();i++) {
         ui->listWidget->addItem(examples[i].first);
     }
+
+    ui->listWidget->setCurrentRow(examples.size()-1);
 
 }
 

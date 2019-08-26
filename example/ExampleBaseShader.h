@@ -16,7 +16,7 @@ public:
     virtual void setup() {
         Example::setup();
         //编译顶点着色器和片段着色器
-        program = ExampleUtil::instance()->createProgram("Example2.vs", "Example2.fs");
+        program = ExampleUtil::instance()->createProgram("ExampleBaseShader.vs", "ExampleBaseShader.fs");
 
         //初始化顶点数据
         vertice.resize(vertice_num*2);
